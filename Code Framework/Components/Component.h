@@ -8,7 +8,7 @@
 class Component
 {
 private:
-	string m_Label;
+	string m_Label; //label
 protected:
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
 public:
