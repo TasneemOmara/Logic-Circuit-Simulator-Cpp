@@ -7,7 +7,7 @@ select1::select1()
 }
 
 
-bool select(ApplicationManager *App, int &index){
+bool GetIndexSelected(ApplicationManager *App, int &index){
     int count=0;
     Component* CompList;
     bool selected;
