@@ -11,6 +11,8 @@ ADD_LED::ADD_LED(ApplicationManager* pApp) :Action(pApp)
 ADD_LED::~ADD_LED( void)
 {
 }
+
+void ADD_LED::Execute(){
 //Get a Pointer to the user Interfaces
 UI* pUI = pManager->GetUI();
 

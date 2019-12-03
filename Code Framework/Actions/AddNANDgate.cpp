@@ -11,6 +11,8 @@ AddNANDgate::AddNANDgate(ApplicationManager* pApp) :Action(pApp)
 AddNANDgate::~AddNANDgate(void)
 {
 }
+
+void AddNANDgate::Execute(){
 //Get a Pointer to the user Interfaces
 UI* pUI = pManager->GetUI();
 
