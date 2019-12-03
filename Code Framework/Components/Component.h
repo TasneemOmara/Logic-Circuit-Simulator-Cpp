@@ -10,8 +10,10 @@ class Component
 private:
 	string m_Label; //label
 protected:
+	bool is_selected;
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
 public:
+	virtual bool selected(Point k) = 0;
 	Component(GraphicsInfo *r_GfxInfo);
 	virtual void Operate() = 0;	//Calculates the output according to the inputs
 	virtual void Draw(UI* ) = 0;	//for each component to Draw itself

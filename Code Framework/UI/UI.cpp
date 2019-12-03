@@ -83,7 +83,8 @@ ActionType UI::GetUserAction() const
 {	
 	int x,y;
 	pWind->WaitMouseClick(x, y);	//Get the coordinates of the user click
-
+	LastClicked.x = x;
+	LastClicked.y = y;
 	if(AppMode == DESIGN )	//application is in design mode
 	{
 		//[1] If user clicks on the Toolbar
@@ -177,6 +178,9 @@ void UI::PrintMsg(string msg) const
 	pWind->DrawString(MsgX, height - MsgY, msg);
 }
 //////////////////////////////////////////////////////////////////////////////////
+Point UI::getlast_point_clicked(Point LastClicked) {
+	return LastClicked;
+}
 void UI::ClearStatusBar()const
 {
 	// Set the Message offset from the Status Bar
