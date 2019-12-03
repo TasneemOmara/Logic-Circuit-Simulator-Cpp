@@ -6,6 +6,8 @@ Component::Component(GraphicsInfo *r_GfxInfo)
 }
 
 Component::Component()
+
+///
 {}
 
 Component::~Component()
