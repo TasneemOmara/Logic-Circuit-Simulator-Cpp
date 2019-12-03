@@ -41,6 +41,12 @@ enum ActionType
 	STATUS_BAR,		//A click on the status bar
 	DSN_TOOL,	//A click on an empty place in the design tool bar
 
+	// Edit 30/11 (Salma)****************************
+	COPY,       // Copy a Component, a Connection
+	PASTE,      // Paste a Component, a Connection
+	CUT,        // CUT a Component, a Connection
+
+	// Edit ended here*************************
 };
 
 //Possible Status for the pin
