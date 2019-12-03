@@ -67,6 +67,12 @@ UI* ApplicationManager::GetUI()
 }
 
 ////////////////////////////////////////////////////////////////////
+void ApplicationManager::GetCompList(int &Count, *Component Complist ) {
+	Complist = CompList[0];
+	Count = CompCount; 
+}
+
+////////////////////////////////////////////////////////////////////
 
 ApplicationManager::~ApplicationManager()
 {
