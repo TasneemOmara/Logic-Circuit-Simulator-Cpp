@@ -2,8 +2,9 @@
 #include "..\ApplicationManager.h"
 
 
-Select::Select(ApplicationManager *App) : Action(App), index{-1}
+Select::Select(ApplicationManager *App) : Action(App)
 {
+    index=-1;
 }
 
 
