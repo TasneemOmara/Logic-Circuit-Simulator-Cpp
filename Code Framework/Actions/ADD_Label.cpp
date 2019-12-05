@@ -9,7 +9,8 @@ ADD_Label::ADD_Label(ApplicationManager* pApp) :Action(pApp) {
 ADD_Label::~ADD_Label(void) {
 }
 
-<<<<<<< HEAD
+
+
 void ADD_Label::Execute(){
     int count=0;
     Component* CompList;
@@ -68,20 +69,4 @@ ADD_Label* pA = new ADD_Label(pGInfo, _FANOUT);//***how label is wriiten depends
 
 
 pManager->AddComponent(pA);
-=======
-void ADD_INV::Execute(){
-    //Get a Pointer to the user Interfaces
-    UI* pUI = pManager->GetUI();
-
-    //Print Action Message
-    pUI->PrintMsg("1-Input inverter Gate: Click to add the gate");
-
->>>>>>> 4793ea1f1caf75358747e4c799abc3af6c0fec2e
-}
-
-void ADD_BUFF::Undo()
-{}
-
-void ADD_BUFF::Redo()
-{}
 
