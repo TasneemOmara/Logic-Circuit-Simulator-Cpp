@@ -24,12 +24,6 @@ pUI->ClearStatusBar();
 int gateWidth = pUI->getGateWidth();
 int gateHeight = pUI->getGateHeight();
 
-GraphicsInfo* pGInfo = new GraphicsInfo(2); //Gfx info to be used to construct the OR gate
-
-pGInfo->PointsList[0].x = Cx - gateWidth / 2;
-pGInfo->PointsList[0].y = Cy - gateHeight / 2;
-pGInfo->PointsList[1].x = Cx + gateWidth / 2;
-pGInfo->PointsList[1].y = Cy + gateHeight / 2;
 
 
 ADD_Label* pA = new ADD_Label(pGInfo, _FANOUT);//***how label is wriiten depends on how u made it guys
