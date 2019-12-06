@@ -1,6 +1,6 @@
 #pragma once
 #include "action.h"
-#include "..\Components\XNOR.h"//*gohary
+#include "..\Components\XNOR2.h"
 
 class AddXNORgate :public Action
 {private:
