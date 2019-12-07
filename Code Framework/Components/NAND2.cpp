@@ -16,7 +16,7 @@ void NAND2::Operate()
 
 // Function Draw
 // Draws 2-input AND gate
-void NAND2::Draw(UI* pUI)
+void NAND2::Draw(UI* pUI, bool selected)
 {
 	//Call output class and pass gate drawing info to it.
 	pUI->DrawNAND2(*m_pGfxInfo);
