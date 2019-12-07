@@ -22,6 +22,6 @@ void BUFF::Operate() {
 
 }	//Calculates the output of the AND gate
 
-void BUFF::Draw(UI* pUI, bool selected) {
+void BUFF::DrawBuffer(UI* pUI, bool selected) {
 	pUI->(*m_pGfxInfo, selected);
 }
