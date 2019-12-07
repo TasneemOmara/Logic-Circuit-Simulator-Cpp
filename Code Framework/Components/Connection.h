@@ -12,7 +12,7 @@ class Connection :	public Component
 	InputPin* DstPin;	//The Destination pin of this connection (an input pin of certain Component)
 public:
 	//Connection(const GraphicsInfo &r_GfxInfo, Component *pS=NULL,Component *pD=NULL, int Pin=0);
-	Connection (OutputPin *pSrcPin,InputPin *pDstPin);
+	Connection ( GraphicsInfo *r_GfxInfo);
 
 	virtual void Operate() ;	//Calculates the output according to the inputs
 	virtual void Draw(UI* );	//for each component to Draw itself
@@ -31,4 +31,15 @@ public:
 
 	virtual void SaveComponent(int ID, fstream &fileToSave) {}; //save function, it is empty for this stage only
 	virtual GraphicsInfo* getGraphics();
+
+
+
+	virtual void Operate() ;	//Calculates the output according to the inputs
+	virtual bool selected(Point k) ;
+
+	virtual void Draw(UI*, bool selected) ;	//for each component to Draw itself
+
+	virtual InputPin* getInput() ;
+	virtual OutputPin* getOutput() ;
+
 };

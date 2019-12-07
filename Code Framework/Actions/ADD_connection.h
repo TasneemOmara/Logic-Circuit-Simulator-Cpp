@@ -4,8 +4,11 @@
 
 class ADD_connection :public Action
 {private: 
+	/*
 	int Cx, Cy;	//Center point of the gate
 	int x1, y1, x2, y2;	//Two corners of the rectangluar area
+	*/
+	int cx1, cx2, cy1, cy2;
 public:
 	ADD_connection(ApplicationManager* pApp);
 	virtual ~ADD_connection(void);

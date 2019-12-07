@@ -1,12 +1,13 @@
-#ifndef _GATE_H
-#define _GATE_H
+#ifndef _BUFFER_H
+#define _BUFFER_H
 
 
 #include "InputPin.h"
 #include "OutputPin.h"
 #include "Component.h"
+#include "Gate.h"
 
-class BUFF:public Component
+class BUFF:public Gate
 {
 protected:
 	InputPin m_InputputPin;	//BUFF has only 1 inputputPin
