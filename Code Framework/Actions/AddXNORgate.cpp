@@ -2,7 +2,7 @@
 #include "..\ApplicationManager.h"
 
 
-AddXNORgate::AddXNORgate(AddNORgate(ApplicationManager* pApp) :Action(pApp)
+AddXNORgate::AddXNORgate(ApplicationManager* pApp) :Action(pApp)
 {
 }
 

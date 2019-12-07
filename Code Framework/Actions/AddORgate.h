@@ -1,6 +1,6 @@
 #pragma once
 #include "action.h"
-#include "\Components\OR.h"//i need from you gohary to provide the file nme for each component
+#include "\Components\OR2.h"
 class AddORgate:public Action
 {
 private:
