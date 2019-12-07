@@ -82,7 +82,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			break;
 
 		case SAVE:
-			///
+			pAct = new Save(this);
 			break;
 		case LOAD:
 			//
@@ -118,6 +118,24 @@ UI* ApplicationManager::GetUI()
 void ApplicationManager::GetCompList(int &Count, Component* Complist ) {
 	Complist = CompList[0];
 	Count = CompCount; 
+}
+
+////////////////////////////////////////////////////////////////////
+ApplicationManager::Save(fstream &fileToSave) {
+	if (fileToSave.is_open())
+	{
+		fileToSave << CompCount << endl;
+		for (size_t i = 0; i < CompCount; i++)
+		{
+			CompList[i]->SaveComponent(i , fileToSave);
+		}
+	}
+	else
+	{
+		pUI->PrintMsg("Unable to open the file");
+	}
+
+	fileToSave.close();
 }
 
 ////////////////////////////////////////////////////////////////////

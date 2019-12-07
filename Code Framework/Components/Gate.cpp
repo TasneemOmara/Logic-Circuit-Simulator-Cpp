@@ -30,7 +30,6 @@ bool Gate::selected(Point k) {
 		return false;
 	}
 }
-
 	InputPin* Gate::getInput()
 	{
 		return m_InputPins[0];

@@ -15,7 +15,10 @@ public:
 	virtual InputPin* getInput();
 	virtual OutputPin* getOutput();
 	
+	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
+
 	virtual GraphicsInfo* getGraphics();
+
 };
 
 #endif
