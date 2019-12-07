@@ -13,6 +13,8 @@
 #include "Actions\AddXORgate.h"
 #include "Actions\Select.h"
 
+
+
 ApplicationManager::ApplicationManager()
 {
 	CompCount = 0;
@@ -114,7 +116,6 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			pAct = NULL;
 		}
 	}
-}
 ////////////////////////////////////////////////////////////////////
 
 void ApplicationManager::UpdateInterface()

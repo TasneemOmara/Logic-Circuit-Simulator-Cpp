@@ -30,12 +30,12 @@ bool Gate::selected(Point k) {
 		return false;
 	}
 }
-	InputPin* Gate::getInput()
-	{
-		return m_InputPins[0];
-	}
+//	InputPin* Gate::getInput()
+	//{
+//		return m_InputPins[0];
+	//}
 
-	OutputPin* Gate::getoutput()
-	{
-		return m_OutputPin;
-	}
+	//OutputPin* Gate::getoutput()
+	//{
+		//return m_OutputPin;
+	//}
