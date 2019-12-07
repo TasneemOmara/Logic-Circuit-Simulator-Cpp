@@ -13,8 +13,6 @@
 #include "Actions\AddXORgate.h"
 #include "Actions\Select.h"
 
-
-
 ApplicationManager::ApplicationManager()
 {
 	CompCount = 0;
@@ -22,20 +20,6 @@ ApplicationManager::ApplicationManager()
 	for(int i=0; i<MaxCompCount; i++)
 		CompList[i] = NULL;
 
-	map<COMPONENTENUM, string> ComponentsList;   //used to save and load
-	
-	//Converting Enum values to string after mapping 
-	ComponentsList[BUFF]   = "Buffer Gate";
-	ComponentsList[INV2]   = "Inverter Gate";
-	ComponentsList[AND2]   = "AND Gate";
-	ComponentsList[OR2]    = "Or Gate";
-	ComponentsList[NAND2]  = "NAND Gate";
-	ComponentsList[NOR2]   = "NOR Gate";
-	ComponentsList[XOR2]   = "XOR Gate";
-	ComponentsList[XNOR2]  = "XNOR2 Gate";
-	ComponentsList[Switch] = "Switch";
-	ComponentsList[LED]    = "LED Gate";
-	ComponentsList[CONNECTION]   = "Connection";
 
 	//Creates the UI Object & Initialize the UI
 	pUI = new UI;
@@ -116,6 +100,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			pAct = NULL;
 		}
 	}
+}
 ////////////////////////////////////////////////////////////////////
 
 void ApplicationManager::UpdateInterface()
@@ -134,47 +119,6 @@ UI* ApplicationManager::GetUI()
 void ApplicationManager::GetCompList(int &Count, Component** Complist ) {
 	Complist = CompList;
 	Count = CompCount; 
-}
-
-////////////////////////////////////////////////////////////////////
-ApplicationManager::Save(fstream &fileToSave) {
-	if (fileToSave.is_open())
-	{
-		fileToSave << CompCount << endl;
-		for (size_t i = 0; i < CompCount; i++)
-		{
-			CompList[i]->SaveComponent(i , fileToSave);
-		}
-	}
-	else
-	{
-		pUI->PrintMsg("Unable to open the file");
-	}
-
-	fileToSave.close();
-}
-
-
-////////////////////////////////////////////////////////////////////
-
-ApplicationManager::Load(fstream &fileToLoad) {
-	if (fileToLoad.is_open())
-	{
-		string toLoad;
-		getline(fileToLoad, toLoad);
-		CompCount = stoi(toLoad);
-		for (size_t i = 0; i < CompCount; i++)
-		{
-			getline(fileToLoad, toLoad);
-			CompList[i]->LoadComponent(i, fileToLoad);
-		}
-	}
-	else
-	{
-		pUI->PrintMsg("Unable to open the file");
-	}
-
-	fileToSave.close();
 }
 
 ////////////////////////////////////////////////////////////////////

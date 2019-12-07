@@ -31,7 +31,7 @@ pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 pGInfo->PointsList[0].y = Cy - gateHeight / 2;
 pGInfo->PointsList[1].x = Cx + gateWidth / 2;
 pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-XNOR* pA = new XNOR(pGInfo, XNOR_FANOUT);//***how XNOR is wriiten depends on how u made it guys
+XNOR2* pA = new XNOR2(pGInfo, XNOR_FANOUT);//***how XNOR is wriiten depends on how u made it guys
 pManager->AddComponent(pA);
 }
 

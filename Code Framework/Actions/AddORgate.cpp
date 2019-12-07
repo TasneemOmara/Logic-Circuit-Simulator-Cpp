@@ -34,7 +34,7 @@ pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 pGInfo->PointsList[0].y = Cy - gateHeight / 2;
 pGInfo->PointsList[1].x = Cx + gateWidth / 2;
 pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-OR* pA = new OR(pGInfo, OR_FANOUT);//***how OR is wriiten depends on how u made it guys
+OR2* pA = new OR2(pGInfo, OR_FANOUT);//***how OR is wriiten depends on how u made it guys
 pManager->AddComponent(pA);
 }
 
