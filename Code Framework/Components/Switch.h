@@ -12,7 +12,8 @@ protected:
 	OutputPin m_OutputPin;	//Switch has only 1 OutputPin
 public:
 	Switch(GraphicsInfo* pGfxInfo, int r_FanOut);
-	
+
+	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
 
 };
 

@@ -13,6 +13,7 @@ protected:
 public:
 	Led(GraphicsInfo* pGfxInfo);
 	
+	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
 
 };
 

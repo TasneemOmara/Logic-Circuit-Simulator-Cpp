@@ -3,13 +3,14 @@
 
 #include "..\Defs.h"
 #include "..\UI\UI.h"
+#include <fstream>
 
 //Base class for classes Gate, Switch, and LED.
 class Component
 {
-private:
-	string m_Label; //label
+
 protected:
+	string m_Label;    
 	bool is_selected;
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
 public:
@@ -24,6 +25,7 @@ public:
 
 	virtual void setInputPinStatus(int n, STATUS s)=0;	//set status of Inputpin # n, to be used by connection class.
 
+	virtual void SaveComponent(int ID, fstream &fileToSave ) = 0; //outputs the line defining the saved component 
 	
 	Component();	
 	
