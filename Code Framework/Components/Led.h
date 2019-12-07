@@ -21,10 +21,18 @@ public:
 
 	virtual GraphicsInfo* getGraphics();
 	void Operate() ;	//Calculates the output according to the inputs
-	void Draw(UI*, bool selected);
+	void Draw(UI*);
 	bool selected(Point k);
+virtual void set_selected(bool val);
 
-	virtual void set_selected(bool val);
+virtual int GetOutPinStatus() { return 0; }	//returns status of outputpin if LED, return -1
+virtual int GetInputPinStatus(int n) { return 0; }	//returns status of Inputpin # n if SWITCH, return -1
+
+virtual void setInputPinStatus(int n, STATUS s) {}//set status of Inputpin # n, to be used by connection class.
+
+
+
+
 };
 
 #endif

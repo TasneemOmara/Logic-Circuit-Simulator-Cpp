@@ -15,25 +15,24 @@ public:
 
 	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
 	void Draw(UI*);
-	GraphicsInfo* getGraphics();
+	
 	virtual void set_selected(bool val);
 
-
-
-
-	virtual void Operate();	//Calculates the output of the AND gate
-
-	virtual void Draw(UI*);	//Draws 2-input gate
-
-	virtual int GetOutPinStatus();	//returns status of outputpin if LED, return -1
-
-	virtual int GetInputPinStatus(int n);	//returns status of Inputpin # n if SWITCH, return -1
-
-	virtual void setInputPinStatus(int n, STATUS s);	//set status of Inputpin # n, to be used by connection class.
-
 	
+	
+	int GetOutPinStatus() { return 0; }	//returns status of outputpin if LED, return -1
+	int GetInputPinStatus(int n) { return 0; }	//returns status of Inputpin # n if SWITCH, return -1
 
-	virtual GraphicsInfo* getGraphics();
+	  void setInputPinStatus(int n, STATUS s) {}	//set status of Inputpin # n, to be used by connection class.
+
+	 GraphicsInfo* getGraphics();
+	 bool selected(Point k);
+
+
+
+	virtual void Operate() {
+	}//Calculates the output of the AND gate
+
 
 };
 

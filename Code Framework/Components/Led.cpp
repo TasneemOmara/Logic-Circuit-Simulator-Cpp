@@ -12,7 +12,7 @@ Led::Led(GraphicsInfo* pGfxInfo):Component(pGfxInfo)
 
 void Led::SaveComponent(int ID, fstream &fileToSave)
 {
-	fileToSave << "LED" << "	" << ID << "	" << m_Label << "		" m_pGfxInfo->PointsList[0].x << "		"
+	fileToSave << "LED" << "	" << ID << "	" << m_Label << "		" << m_pGfxInfo->PointsList[0].x << "		"
 		<< m_pGfxInfo->PointsList[0].y << "		" << m_pGfxInfo->PointsList[1].x << "		 " << m_pGfxInfo->PointsList[1].y
 		<< endl;
 }
@@ -24,8 +24,8 @@ void  Led::Operate() {
 
 }	//Calculates the output according to the inputs
 
-void Led::Draw(UI*pUI, bool selected) {
-	pUI->DrawLED(*m_pGfxInfo, selected);
+void Led::Draw(UI*pUI) {
+	pUI->DrawLED(*m_pGfxInfo, is_selected);
 
 
 }
@@ -47,7 +47,7 @@ bool Led::selected(Point k) {
 
 }
 
-virtual void Led::set_selected(bool val)
+ void Led::set_selected(bool val)
 {
 	is_selected = val;
 }

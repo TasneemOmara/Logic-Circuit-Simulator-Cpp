@@ -17,7 +17,6 @@ public:
 	
 	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
 	
-	virtual GraphicsInfo* getGraphics();
 	 void Operate();	//Calculates the output of the AND gate
 	 void Draw(UI*);	//Draws 2-input gate
 
@@ -26,9 +25,7 @@ public:
 
 	 void setInputPinStatus(int n, STATUS s);	//set status of Inputpin # n, to be used by connection class.
 
-	 
-
-	 GraphicsInfo* getGraphics();
+	  GraphicsInfo* getGraphics();
 
 	//virtual OutputPin* getOutput() ;
 	//virtual InputPin* getInput() ;

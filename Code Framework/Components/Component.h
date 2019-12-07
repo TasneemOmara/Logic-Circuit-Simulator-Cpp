@@ -35,13 +35,13 @@ public:
 	virtual void SaveComponent(int ID, fstream &fileToSave) = 0; //outputs the line defining the saved component 
 	//virtual void LoadComponent(int ID, fstream &fileToLoad) = 0; // Inputs the component in the compList
 
-	virtual InputPin* getInput() = 0;
-	virtual OutputPin* getOutput() = 0;
+	 InputPin* getInput() ;
+	 OutputPin* getOutput() ;
 	
 	virtual GraphicsInfo* getGraphics() =0;
 	
-	virtual string getLabel() = 0;
-	virtual void setLabel(string L) = 0;
+	virtual string getLabel() ;
+	virtual void setLabel(string L) ;
 
 	virtual void set_selected(bool val) = 0;
 

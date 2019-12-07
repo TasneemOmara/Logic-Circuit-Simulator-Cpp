@@ -26,11 +26,25 @@ void Switch::Draw(UI* pUI)
 	pUI->DrawSwitch(*m_pGfxInfo, is_selected);
 }
 
-void set_selected(bool val)
+void Switch::set_selected(bool val)
 {
 	is_selected = val;
 }
-
+bool Switch::selected(Point k) {
+	int x_min = m_pGfxInfo->PointsList[0].x;
+	int x_max = m_pGfxInfo->PointsList[1].x;
+	int y_min = m_pGfxInfo->PointsList[0].y;
+	int y_max = m_pGfxInfo->PointsList[1].y;
+	if (k.x > x_min && k.x < x_max && k.y>y_min && k.y < y_max) {
+		is_selected = true;
+		return true;
+	}
+	else
+	{
+		is_selected = false;
+		return false;
+	}
+}
  //InputPin* Switch::getInput() {
 	//return nullptr;
 //}

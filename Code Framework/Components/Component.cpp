@@ -14,6 +14,19 @@ Component::Component()
 
 Component::~Component()
 {}
+string Component::getLabel() {
+	return m_Label;
+}
+void Component::setLabel(string L) {
+	m_Label = L;
+}
 
+InputPin* Component::getInput() {
+	return nullptr;
+}
+OutputPin* Component::getOutput() {
+	return nullptr;
+
+}
 
 

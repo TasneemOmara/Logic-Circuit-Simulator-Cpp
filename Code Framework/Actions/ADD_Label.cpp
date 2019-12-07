@@ -32,9 +32,7 @@ void ADD_Label::Execute(){
 	int x = pselect-> getIndex();
     
 
-
-
-    GraphicsInfo* pointer = CompList[x]. getGraphics();
+    GraphicsInfo* pointer =CompList[x]-> getGraphics();
 	int Cx1, Cy1, Cx2, Cy2;
     Cx1 = pointer -> PointsList[0].x;
     Cy1 = pointer -> PointsList[0].y;
