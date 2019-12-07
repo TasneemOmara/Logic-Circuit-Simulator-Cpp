@@ -112,6 +112,60 @@
     <ClInclude Include="UI\UI.h">
       <Filter>UI</Filter>
     </ClInclude>
+    <ClInclude Include="Components\Led.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\NAND2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\NOR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\OR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Switch.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\XNOR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\XOR2.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_BUFF.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_connection.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_INV.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_LED.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_switch.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\AddNANDgate.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\AddNORgate.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\AddORgate.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\AddXNORgate.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\AddXORgate.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\select1.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\AND2.cpp">
@@ -251,6 +305,60 @@
       <Filter>UI</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Components\led.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\NAND2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\NOR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\OR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\Switch.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\XNOR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\XOR2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_BUFF.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_connection.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_INV.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_LED.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_switch.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\AddNANDgate.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\AddNORgate.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\AddORgate.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\AddXNORgate.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\AddXORgate.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\select1.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

@@ -26,7 +26,14 @@ protected:
 public:
 	Gate(GraphicsInfo* pGfxInfo, int r_Inputs, int r_FanOut);
 	bool selected(Point k);
+
 	virtual void SaveComponent(int ID, fstream &fileToSave) = 0;
+
+	virtual GraphicsInfo* getGraphics();
+	
+
+	virtual InputPin* getInput(); 
+	virtual OutputPin* getOutput();
 
 };
 

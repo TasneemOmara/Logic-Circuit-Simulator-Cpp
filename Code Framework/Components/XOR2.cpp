@@ -44,9 +44,15 @@ void XOR2::setInputPinStatus(int n, STATUS s)
 }
 
 
+
 void XOR2::SaveComponent(int ID, fstream &fileToSave)
 {
 	fileToSave << "XOR2 Gate " << "	" << ID << m_Label << "		" << "( " << m_pGfxInfo->PointsList[0].x << " , "
 		<< m_pGfxInfo->PointsList[0].y << " ) " << "	" << "( " << m_pGfxInfo->PointsList[1].x << " , " << m_pGfxInfo->PointsList[1].y
 		<< " )" << endl;
+}
+
+GraphicsInfo* XOR2::getGraphics()
+{
+	return m_pGfxInfo;
 }

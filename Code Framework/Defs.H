@@ -69,7 +69,14 @@ enum  MODE	//Modes of operation
 //assume fan out is 5 for now it can be read from the user or can be predefined as const
 enum FANOUT
 {
-	AND2_FANOUT = 5	//Default fan out of 2-input AND gate
+	AND2_FANOUT = 5,//Default fan out of 2-input AND gate
+	NAND2_FANOUT = 5,
+	OR2_FANOUT = 5,
+	NOR2_FANOUT = 5,
+	XOR2_FANOUT = 5,
+	XNOR2_FANOUT = 5,
+	Switch_FANOUT = 5
+	
 };
 
 

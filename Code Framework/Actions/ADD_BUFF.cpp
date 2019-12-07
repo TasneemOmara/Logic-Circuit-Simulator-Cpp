@@ -15,7 +15,7 @@ void ADD_BUFF::Execute(){
     UI* pUI = pManager->GetUI();
 
     //Print Action Message
-    pUI->PrintMsg("1-Input BUFFER Gate: Click to add the gate");
+    pUI->PrintMsg("Input BUFFER Gate: Click to add the gate");
 
     //Get Center point of the Gate
     pUI->GetPointClicked(Cx, Cy);

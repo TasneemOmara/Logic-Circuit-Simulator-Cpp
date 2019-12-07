@@ -79,10 +79,12 @@ string UI::GetSrting()
 }
 
 //This function reads the position where the user clicks to determine the desired action
-ActionType UI::GetUserAction() const
+ActionType UI::GetUserAction() 
 {	
 	int x,y;
 	pWind->WaitMouseClick(x, y);	//Get the coordinates of the user click
+	Point getlast_point_clicked();
+	Point LastClicked;
 	LastClicked.x = x;
 	LastClicked.y = y;
 	if(AppMode == DESIGN )	//application is in design mode
@@ -178,7 +180,7 @@ void UI::PrintMsg(string msg) const
 	pWind->DrawString(MsgX, height - MsgY, msg);
 }
 //////////////////////////////////////////////////////////////////////////////////
-Point UI::getlast_point_clicked(Point LastClicked) {
+Point UI::getlast_point_clicked() {
 	return LastClicked;
 }
 void UI::ClearStatusBar()const
@@ -441,6 +443,34 @@ void UI::DrawConnection(const GraphicsInfo &r_GfxInfo, bool selected) const
 	//**************************end edit
 }
 
+
+
+void UI::PrintMsg2(string msg, int cx, int cy) const
+{
+	ClearStatusBar();	//Clear Status bar to print message on it
+	// Set the Message offset from the Status Bar
+	int MsgX = cx;
+	int MsgY = cy;
+
+	// Print the Message
+	pWind->SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
+	pWind->SetPen(MsgColor);
+	pWind->DrawString(MsgX,  MsgY, msg);
+}
+
+void UI::ClearLabel(int xx , int yy)const
+{
+	// Set the Message offset from the Status Bar
+	int MsgX = xx;
+	int MsgY = yy;
+
+	//Overwrite using bachground color to erase the message
+	pWind->SetPen(BkGrndColor);
+	pWind->SetBrush(BkGrndColor);
+
+	//**************************************************----------------------------
+	pWind->DrawRectangle(MsgX, yy, 80, 4);  //assuming that the Label won't cover more than 80 pixels width and the 4 pixels height
+}
 
 UI::~UI()
 {

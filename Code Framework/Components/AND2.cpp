@@ -47,3 +47,11 @@ void AND2::SaveComponent(int ID, fstream &fileToSave)
 		<< m_pGfxInfo->PointsList[0].y << " ) " << "	" << "( " << m_pGfxInfo->PointsList[1].x << " , " << m_pGfxInfo->PointsList[1].y
 		<< " )" << endl;
 }
+
+ GraphicsInfo* AND2:: getGraphics()
+{
+	 return m_pGfxInfo;
+}
+
+
+

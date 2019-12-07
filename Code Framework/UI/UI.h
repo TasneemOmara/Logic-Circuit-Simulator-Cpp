@@ -121,14 +121,14 @@ class UI
 public:
 	
 	UI();
-	Point getlast_point_clicked(Point LastClicked);
+	Point getlast_point_clicked();
 	int getGateWidth() const;
 	int getGateHeight() const;	
 	// Input Functions  ---------------------------
 	void GetPointClicked(int &, int &);	//Get coordinate where user clicks
 	string GetSrting();		//Returns a string entered by the user
 
-	ActionType GetUserAction() const; //Reads the user click and maps it to an action
+	ActionType GetUserAction() ; //Reads the user click and maps it to an action
 
 	
 	// Output Functions  ---------------------------
@@ -165,6 +165,11 @@ public:
 	
 	void PrintMsg(string msg) const;	//Print a message on Status bar
 
+	void PrintMsg2(string msg , int cx, int cy) const;   //Print a message on a specified lacation (Label)
+
+
+	////////////////////////////////////////////////////////////////////////
+	void ClearLabel(int xx, int yy) const;  //clear the label area
 	~UI();
 };
 

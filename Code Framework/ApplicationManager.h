@@ -21,9 +21,6 @@ private:
 	UI* pUI; //pointer to the UI
 
 
-public:
-
-
 public:	
 	ApplicationManager(); //constructor
 
@@ -38,7 +35,7 @@ public:
 	//Gets a pointer to UI Object
 	UI* GetUI();
 
-	void GetCompList(int &Count, *Component Complist)
+	void GetCompList(int& Count, Component* Complist);
 	
 
 	//Adds a new component to the list of components

@@ -1,6 +1,6 @@
 #include "Connection.h"
 
-Connection::Connection(GraphicsInfo *r_GfxInfo, OutputPin *pSrcPin,InputPin *pDstPin):Component(r_GfxInfo)	
+Connection::Connection(OutputPin *pSrcPin,InputPin *pDstPin):Component(r_GfxInfo)	
 {
 	SrcPin = pSrcPin;
 	DstPin = pDstPin;
@@ -45,3 +45,10 @@ void Connection::setInputPinStatus(int n, STATUS s)
 {
 	SrcPin->setStatus(s);
 }
+
+
+GraphicsInfo* Connection::getGraphics()
+{
+	return m_pGfxInfo;
+}
+;

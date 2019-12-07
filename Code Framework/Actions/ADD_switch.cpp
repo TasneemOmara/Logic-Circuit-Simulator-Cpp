@@ -32,7 +32,7 @@ void ADD_switch::Execute(){
     pGInfo->PointsList[0].y = Cy - gateHeight / 2;
     pGInfo->PointsList[1].x = Cx + gateWidth / 2;
     pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-    switch* pA = new switch(pGInfo, switch_FANOUT);
+    Switch* pA = new Switch(pGInfo, Switch_FANOUT);
     pManager->AddComponent(pA);
 }
 

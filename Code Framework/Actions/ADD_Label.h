@@ -1,6 +1,6 @@
 #pragma once
-#include "action.h"
-#include "..\Components\Connections.h"
+#include "Action.h"
+//#include "..\Components\Connections.h"
 
 class ADD_Label :public Action
 {private: 

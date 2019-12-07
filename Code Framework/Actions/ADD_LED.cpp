@@ -1,18 +1,18 @@
-#include "ADD_LED.h"
+#include "ADD_LED2.h"
 #include "..\ApplicationManager.h"
 
 
 
-ADD_LED::ADD_LED(ApplicationManager* pApp) :Action(pApp)
+ADD_LED2::ADD_LED2(ApplicationManager* pApp) :Action(pApp)
 {
 }
 
 
-ADD_LED::~ADD_LED( void)
+ADD_LED2::~ADD_LED2( void)
 {
 }
 
-void ADD_LED::Execute(){
+void ADD_LED2::Execute(){
     //Get a Pointer to the user Interfaces
     UI* pUI = pManager->GetUI();
 
@@ -34,12 +34,12 @@ void ADD_LED::Execute(){
     pGInfo->PointsList[0].y = Cy - gateHeight / 2;
     pGInfo->PointsList[1].x = Cx + gateWidth / 2;
     pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-    LED* pA = new LED(pGInfo, LED_FANOUT);//***how LED is wriiten depends on how u made it guys
+    led* pA = new led(pGInfo, LED_FANOUT);//***how LED is wriiten depends on how u made it guys
     pManager->AddComponent(pA);
 }
 
-void ADD_LED::Undo()
+void ADD_LED2::Undo()
 {}
 
-void ADD_LED::Redo()
+void ADD_LED2::Redo()
 {}
