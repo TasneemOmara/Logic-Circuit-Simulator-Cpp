@@ -1,6 +1,6 @@
 #pragma once
 #include "action.h"
-#include "..\Components\Connections.h"
+#include "..\Components\Connection.h"
 
 class ADD_connection :public Action
 {private: 

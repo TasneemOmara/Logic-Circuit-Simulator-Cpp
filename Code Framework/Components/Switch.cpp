@@ -6,3 +6,11 @@ Switch::Switch(GraphicsInfo* pGfxInfo,int r_FanOut):Component(pGfxInfo), m_Outpu
 {
 
 }
+
+virtual InputPin* Switch::getInput() {
+	return nullptr;
+}
+
+virtual OutputPin* Switch::getOutput() {
+
+}
