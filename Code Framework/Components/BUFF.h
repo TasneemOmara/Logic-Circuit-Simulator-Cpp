@@ -19,7 +19,7 @@ public:
 	
 	virtual GraphicsInfo* getGraphics();
 	 void Operate();	//Calculates the output of the AND gate
-	 void Draw(UI*, bool selected);	//Draws 2-input gate
+	 void Draw(UI*);	//Draws 2-input gate
 
 	// int GetOutPinStatus();	//returns status of outputpin if LED, return -1
 	// int GetInputPinStatus(int n);	//returns status of Inputpin # n if SWITCH, return -1

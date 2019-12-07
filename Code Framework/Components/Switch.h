@@ -14,8 +14,9 @@ public:
 	Switch(GraphicsInfo* pGfxInfo, int r_FanOut);
 
 	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
-	void Draw(UI*, bool selected);
+	void Draw(UI*);
 	GraphicsInfo* getGraphics();
+	virtual void set_selected(bool val);
 };
 
 #endif

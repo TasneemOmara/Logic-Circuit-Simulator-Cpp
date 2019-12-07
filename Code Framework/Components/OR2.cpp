@@ -18,10 +18,10 @@ void OR2::Operate()
 
 // Function Draw
 // Draws 2-input OR gate
-void OR2::Draw(UI* pUI, bool selected)
+void OR2::Draw(UI* pUI)
 {
 	//Call output class and pass gate drawing info to it.
-	pUI->DrawOR2(*m_pGfxInfo);
+	pUI->DrawOR2(*m_pGfxInfo, is_selected);
 }
 
 //returns status of outputpin

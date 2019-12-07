@@ -23,6 +23,8 @@ public:
 	void Operate() ;	//Calculates the output according to the inputs
 	void Draw(UI*, bool selected);
 	bool selected(Point k);
+
+	virtual void set_selected(bool val);
 };
 
 #endif

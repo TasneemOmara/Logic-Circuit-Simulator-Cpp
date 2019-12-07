@@ -42,4 +42,5 @@ public:
 	virtual InputPin* getInput() ;
 	virtual OutputPin* getOutput() ;
 
+	virtual void set_selected(bool val);
 };
