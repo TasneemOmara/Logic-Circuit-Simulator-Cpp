@@ -16,7 +16,11 @@ public:
 	virtual bool selected(Point k) = 0;
 	Component(GraphicsInfo *r_GfxInfo);
 	virtual void Operate() = 0;	//Calculates the output according to the inputs
-	virtual void Draw(UI* ) = 0;	//for each component to Draw itself
+	virtual void Draw(UI* , bool selected) = 0;	//for each component to Draw itself
+
+
+	//----------------------****************************************************** Edit 7/12
+
 	
 	
 	virtual int GetOutPinStatus()=0;	//returns status of outputpin if LED, return -1
@@ -24,7 +28,7 @@ public:
 
 	virtual void setInputPinStatus(int n, STATUS s)=0;	//set status of Inputpin # n, to be used by connection class.
 
-	
+	virtual GraphicsInfo* getGraphics() = 0;
 	Component();	
 	
 	//Destructor must be virtual

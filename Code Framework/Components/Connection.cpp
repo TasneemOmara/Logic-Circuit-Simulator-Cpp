@@ -45,3 +45,10 @@ void Connection::setInputPinStatus(int n, STATUS s)
 {
 	SrcPin->setStatus(s);
 }
+
+
+GraphicsInfo* Connection::getGraphics()
+{
+	return m_pGfxInfo;
+}
+;

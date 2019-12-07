@@ -40,3 +40,9 @@ void NAND2::setInputPinStatus(int n, STATUS s)
 {
 	m_InputPins[n-1].setStatus(s);
 }
+
+GraphicsInfo* NAND2::getGraphics()
+{
+	return m_pGfxInfo;
+}
+;

@@ -42,3 +42,10 @@ void OR2::setInputPinStatus(int n, STATUS s)
 {
 	m_InputPins[n-1].setStatus(s);
 }
+
+
+GraphicsInfo* OR2::getGraphics()
+{
+	return m_pGfxInfo;
+}
+;

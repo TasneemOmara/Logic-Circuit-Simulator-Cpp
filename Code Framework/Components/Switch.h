@@ -13,6 +13,7 @@ protected:
 public:
 	Switch(GraphicsInfo* pGfxInfo, int r_FanOut);
 	
+	virtual GraphicsInfo* getGraphics();
 
 };
 

@@ -12,3 +12,9 @@ BUFF::BUFF(GraphicsInfo* pGfxInfo,int r_FanOut):Component(pGfxInfo), m_OutputPin
 {
 
 }
+
+GraphicsInfo* BUFF::getGraphics()
+{
+	return m_pGfxInfo;
+}
+;

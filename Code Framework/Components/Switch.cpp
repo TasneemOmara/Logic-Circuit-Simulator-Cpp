@@ -6,3 +6,9 @@ Switch::Switch(GraphicsInfo* pGfxInfo,int r_FanOut):Component(pGfxInfo), m_Outpu
 {
 
 }
+
+GraphicsInfo* Switch::getGraphics()
+{
+	return m_pGfxInfo;
+}
+;

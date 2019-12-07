@@ -39,3 +39,9 @@ void AND2::setInputPinStatus(int n, STATUS s)
 {
 	m_InputPins[n-1].setStatus(s);
 }
+
+ GraphicsInfo* AND2:: getGraphics()
+{
+	 return m_pGfxInfo;
+}
+;
