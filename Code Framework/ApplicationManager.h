@@ -5,6 +5,8 @@
 #include "UI\UI.h"
 #include "Actions\Action.h"
 #include "Components\Component.h"
+#include <fstream>
+using namespace std;
 
 //Main class that manages everything in the application.
 class ApplicationManager
@@ -38,6 +40,9 @@ public:
 
 	//Adds a new component to the list of components
 	void AddComponent(Component* pComp);
+
+	//Save the circuit
+	void Save(fstream &fileToSave);
 
 	//destructor
 	~ApplicationManager();

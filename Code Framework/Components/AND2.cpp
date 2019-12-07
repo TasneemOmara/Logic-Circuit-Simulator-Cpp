@@ -40,8 +40,18 @@ void AND2::setInputPinStatus(int n, STATUS s)
 	m_InputPins[n-1].setStatus(s);
 }
 
+
+void AND2::SaveComponent(int ID, fstream &fileToSave)
+{
+	fileToSave << "AND2 Gate " << "	" << ID << m_Label << "		" << "( " << m_pGfxInfo->PointsList[0].x << " , "
+		<< m_pGfxInfo->PointsList[0].y << " ) " << "	" << "( " << m_pGfxInfo->PointsList[1].x << " , " << m_pGfxInfo->PointsList[1].y
+		<< " )" << endl;
+}
+
  GraphicsInfo* AND2:: getGraphics()
 {
 	 return m_pGfxInfo;
 }
-;
+
+
+
