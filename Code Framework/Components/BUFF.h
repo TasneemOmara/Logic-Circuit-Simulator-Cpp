@@ -16,6 +16,8 @@ public:
     BUFF(GraphicsInfo* pGfxInfo, int r_FanOut);
 	
 	virtual GraphicsInfo* getGraphics();
+	virtual OutputPin* getOutput() ;
+	virtual InputPin* getInput() ;
 
 };
 

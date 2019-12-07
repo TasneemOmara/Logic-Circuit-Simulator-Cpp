@@ -42,63 +42,63 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 	Action* pAct = NULL;
 	switch (ActType)
 	{
-		case ADD_AND_GATE_2:
-			pAct= new AddANDgate2(this);
-			break;
+	case ADD_AND_GATE_2:
+		pAct = new AddANDgate2(this);
+		break;
 
-		case ADD_CONNECTION:
-			pAct = new ADD_connection(this);
-			break;
+	case ADD_CONNECTION:
+		pAct = new ADD_connection(this);
+		break;
 
-		case SELECT:
-			pAct = new Select(this);
-			break;
-		case ADD_Buff:
-			pAct = new ADD_BUFF(this);
-			break;
-		case ADD_INV:
-			pAct = new ADD_INV2(this);
-			break;
-		case ADD_OR_GATE_2:
-			pAct = new AddORgate(this);
-			break;
-		case ADD_NAND_GATE_2:
-			pAct = new AddNANDgate(this);
-			break;
-		case ADD_NOR_GATE_2:
-			pAct = new AddNORgate(this);
-			break;
-		case ADD_XOR_GATE_2:
-			pAct = new AddXORgate(this);
-			break;
-		case ADD_XNOR_GATE_2:
-			pAct = new AddXNORgate(this);
-			break;
-		case ADD_Switch:
-			pAct = new ADD_switch(this);
-			break;
-		case ADD_LED:
-			pAct = new ADD_LED2(this);
-			break;
+	case SELECT:
+		pAct = new Select(this);
+		break;
+	case ADD_Buff:
+		pAct = new ADD_BUFF(this);
+		break;
+	case ADD_INV:
+		pAct = new ADD_INV2(this);
+		break;
+	case ADD_OR_GATE_2:
+		pAct = new AddORgate(this);
+		break;
+	case ADD_NAND_GATE_2:
+		pAct = new AddNANDgate(this);
+		break;
+	case ADD_NOR_GATE_2:
+		pAct = new AddNORgate(this);
+		break;
+	case ADD_XOR_GATE_2:
+		pAct = new AddXORgate(this);
+		break;
+	case ADD_XNOR_GATE_2:
+		pAct = new AddXNORgate(this);
+		break;
+	case ADD_Switch:
+		pAct = new ADD_switch(this);
+		break;
+	case ADD_LED:
+		pAct = new ADD_LED2(this);
+		break;
 
-		case SAVE:
-			///
-			break;
-		case LOAD:
-			//
-			break;
-		case EXIT:
-			///TODO: create ExitAction here
-			break;
-		
-	
-	if(pAct)
-	{
-		pAct->Execute();
-		delete pAct;
-		pAct = NULL;
+	case SAVE:
+		///
+		break;
+	case LOAD:
+		//
+		break;
+	case EXIT:
+		///TODO: create ExitAction here
+		break;
+
+
+		if (pAct)
+		{
+			pAct->Execute();
+			delete pAct;
+			pAct = NULL;
+		}
 	}
-}
 ////////////////////////////////////////////////////////////////////
 
 void ApplicationManager::UpdateInterface()

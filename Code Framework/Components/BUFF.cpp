@@ -2,10 +2,10 @@
 
 
 
-BUFF::BUFF(GraphicsInfo* pGfxInfo):Component(pGfxInfo)
+BUFF::BUFF(GraphicsInfo* pGfxInfo) :Component(pGfxInfo)
 {
-	InputPin* m_InputputPin = new InputPin;
-    m_InputputPin->setComponent(this);
+	InputPin* m_InputPin = new InputPin;
+	m_InputPin->setComponent(this);
 }
 
 BUFF::BUFF(GraphicsInfo* pGfxInfo,int r_FanOut):Component(pGfxInfo), m_OutputPin(r_FanOut)
