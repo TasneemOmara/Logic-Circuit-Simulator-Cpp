@@ -3,6 +3,9 @@
 
 #include "..\Defs.h"
 #include "..\UI\UI.h"
+#include "Inputpin.h"
+#include "Outputpin.h"
+
 
 //Base class for classes Gate, Switch, and LED.
 class Component
@@ -33,7 +36,13 @@ public:
 
 	
 	Component();	
+
+	virtual GraphicsInfo* getGraphics() =0;
 	
+	//virtual string getLabel() = 0;
+	//virtual void setLabel() = 0;
+
+
 	//Destructor must be virtual
 	virtual ~Component();
 };
