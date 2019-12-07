@@ -1,6 +1,6 @@
 #pragma once 
 #include "action.h"
-#include "..\Components\INV.h"//*gohary
+#include "..\Components\INV2.h"//*gohary
 
 class ADD_INV: public Action
 { private:
