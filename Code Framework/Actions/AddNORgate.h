@@ -1,6 +1,6 @@
 #pragma once
 #include "action.h"
-#include "..\Components\NOR.h"//*gohary
+#include "..\Components\NOR2.h"
 
 class AddNORgate: public Action
 {private:

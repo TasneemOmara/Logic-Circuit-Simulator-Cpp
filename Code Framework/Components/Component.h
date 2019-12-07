@@ -10,7 +10,7 @@ class Component
 private:
 	string m_Label; //label
 protected:
-	bool is_selected;
+	bool is_selected=false;
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
 public:
 	virtual bool selected(Point k) = 0;
@@ -28,7 +28,10 @@ public:
 
 	virtual void setInputPinStatus(int n, STATUS s)=0;	//set status of Inputpin # n, to be used by connection class.
 
-	virtual GraphicsInfo* getGraphics() = 0;
+	virtual InputPin* getInput() = 0;
+	virtual OutputPin* getOutput() = 0;
+
+	
 	Component();	
 	
 	//Destructor must be virtual

@@ -12,6 +12,9 @@ protected:
 	OutputPin m_OutputPin;	//Switch has only 1 OutputPin
 public:
 	Switch(GraphicsInfo* pGfxInfo, int r_FanOut);
+
+	virtual InputPin* getInput();
+	virtual OutputPin* getOutput();
 	
 	virtual GraphicsInfo* getGraphics();
 

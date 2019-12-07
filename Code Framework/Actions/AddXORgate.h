@@ -1,6 +1,6 @@
 #pragma once
 #include "action.h"
-#include "..\Components\XOR.h"//*gohary
+#include "..\Components\XOR2.h"
 
 class AddXORgate : public Action
 {private:

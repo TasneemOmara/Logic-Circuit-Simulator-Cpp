@@ -1,6 +1,6 @@
 #pragma once
 #include "action.h"
-#include "..\Components\switch.h"//*gohary
+#include "..\Components\Switch.h"
 
 class ADD_switch :public Action
 {

@@ -1,6 +1,6 @@
 #pragma once
 #include "action.h"
-#include "..\Components\NAND2.h"//*i need from you gohary to provide the file nme for each component
+#include "..\Components\NAND2.h"
 class AddNANDgate : public Action
 {
 	private:

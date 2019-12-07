@@ -12,3 +12,10 @@ GraphicsInfo* Switch::getGraphics()
 	return m_pGfxInfo;
 }
 ;
+virtual InputPin* Switch::getInput() {
+	return nullptr;
+}
+
+virtual OutputPin* Switch::getOutput() {
+
+}

@@ -24,6 +24,11 @@ public:
 	Gate(GraphicsInfo* pGfxInfo, int r_Inputs, int r_FanOut);
 	bool selected(Point k);
 	virtual GraphicsInfo* getGraphics();
+	
+
+	virtual InputPin* getInput(); 
+	virtual OutputPin* getOutput();
+
 };
 
 #endif
