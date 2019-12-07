@@ -32,7 +32,7 @@ void ADD_BUFF::Execute(){
     pGInfo->PointsList[0].y = Cy - gateHeight / 2;
     pGInfo->PointsList[1].x = Cx + gateWidth / 2;
     pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-    BUFF* pA = new BUFF(pGInfo, BUFF_FANOUT);//***how BUFF is wriiten depends on how u made it guys
+    BUFF* pA = new BUFF(pGInfo, BUFF_FANOUT);
     pManager->AddComponent(pA);
     }
 

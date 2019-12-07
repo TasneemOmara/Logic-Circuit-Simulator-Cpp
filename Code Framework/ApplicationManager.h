@@ -6,6 +6,7 @@
 #include "Actions\Action.h"
 #include "Components\Component.h"
 #include <fstream>
+#include <iostream>
 using namespace std;
 
 //Main class that manages everything in the application.
@@ -35,7 +36,7 @@ public:
 	//Gets a pointer to UI Object
 	UI* GetUI();
 
-	void GetCompList(int& Count, Component* Complist);
+	void GetCompList(int& Count, Component** Complist);
 	
 
 	//Adds a new component to the list of components

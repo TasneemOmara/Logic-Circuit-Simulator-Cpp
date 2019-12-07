@@ -77,10 +77,26 @@ enum FANOUT
 	XNOR2_FANOUT = 5,
 	Switch_FANOUT = 5,
 	BUFF_FANOUT = 5,
+	INV2_FANOUT=5,
+	LED_FANOUT=5,
 
 	
 };
 
+enum COMPONENTENUM
+{
+	BUFF,			//1-input Buffer gate
+	INV2,			//1-input Inverter gate
+	AND2,		    //2-input AND gate
+	OR2,		    //2-input OR gate
+	NAND2,	        //2-input NAND gate
+	NOR2,		    //2-input NOR gate
+	XOR2,		    //2-input XOR gate
+	XNOR2,	        //2-input XNOR gate
+	Switch,			//Switch
+	LED,			//LED
+	CONNECTION		//Wire Connection
+};
 
 #ifndef NULL
 #define NULL 0

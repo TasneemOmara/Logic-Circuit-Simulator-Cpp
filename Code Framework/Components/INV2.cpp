@@ -18,7 +18,7 @@ void INV2::Operate()
 void INV2::Draw(UI* pUI, bool selected)
 {
 	//Call output class and pass gate drawing info to it.
-	pUI->DrawINV2(*m_pGfxInfo,selected);
+	pUI->DrawINV(*m_pGfxInfo,selected);
 }
 
 //returns status of outputpin
