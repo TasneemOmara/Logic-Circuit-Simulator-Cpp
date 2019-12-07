@@ -88,7 +88,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			//
 			break;
 		case EXIT:
-			///TODO: create ExitAction here
+			
 			break;
 		
 	
