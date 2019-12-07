@@ -13,6 +13,7 @@
 #include "Actions\AddXORgate.h"
 #include "Actions\Select.h"
 #include"Actions\Save.h"
+#include"Actions\Load.h"
 
 
 ApplicationManager::ApplicationManager()
@@ -102,7 +103,7 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		pAct = new Save(this);
 		break;
 	case LOAD:
-		//
+		pAct = new Load(this);
 		break;
 	case EXIT:
 		///TODO: create ExitAction here
