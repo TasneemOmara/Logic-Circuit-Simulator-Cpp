@@ -1,6 +1,8 @@
 #include"ADD_Label.h"
 #include "..\ApplicationManager.h"
 
+#include "Select.h"
+
 
 
 
@@ -21,16 +23,19 @@ void ADD_Label::Execute(){
     pUI->PrintMsg(" Click to select the gate where u want add your label");
 
    //Get Center point of the Gate
-  pUI->GetPointClicked(Cx, Cy);
+    pUI->GetPointClicked(Cx, Cy);
 
-  pUI->getlast_point_clicked();
+    pUI->getlast_point_clicked();
+  
+    Select *pselect ;
 
-  int x =select::getIndex()
+	int x = pselect-> getIndex();
     
 
 
 
-    GraphicsInfo* pointer = CompList[x]-> r_pGfxInfo;
+    GraphicsInfo* pointer = CompList[x]. getGraphics;
+	int Cx1, Cy1, Cx2, Cy2;
     Cx1 = pointer -> PointsList[0].x;
     Cy1 = pointer -> PointsList[0].y;
     Cx2 = pointer -> PointsList[1].x;
@@ -39,10 +44,23 @@ void ADD_Label::Execute(){
     int width = pUI->getGateWidth ();
     int height = pUI->getGateHeight ();
    
-    label_x = Cx1;
-    label_y = Cy1;
+   int label_x = Cx1;
+   int label_y = Cy1;
 
-    
+   //Clear Status Bar
+   pUI->ClearStatusBar();
+
+   //Request the required label from the user 
+   pUI->PrintMsg("Please Enter the label you want here");
+
+   //Get the string the user inputs u=in the status bar
+   string Label = pUI->GetSrting();
+
+   //Print the string into the desired location
+   pUI->PrintMsg2(Label, label_x, label_y);
+
+
+
   //  pGInfo->PointsList[0].x ;
   //  pGInfo->PointsList[0].y ;
   //  pGInfo->PointsList[1].x ;
@@ -57,16 +75,13 @@ void ADD_Label::Execute(){
 
 
 
-//Clear Status Bar
-pUI->ClearStatusBar();
-//Calculate the rectangle Corners
-int gateWidth = pUI->getGateWidth();
-int gateHeight = pUI->getGateHeight();
 
 
 
-ADD_Label* pA = new ADD_Label(pGInfo, _FANOUT);//***how label is wriiten depends on how u made it guys
 
 
-pManager->AddComponent(pA);
+//ADD_Label* pA = new ADD_Label(pGInfo, _FANOUT);//***how label is wriiten depends on how u made it guys
+
+
+//pManager->AddComponent(pA);
 
