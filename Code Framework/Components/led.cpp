@@ -47,6 +47,11 @@ bool Led::selected(Point k) {
 
 }
 
+virtual void Led::set_selected(bool val)
+{
+	is_selected = val;
+}
+
 
 //InputPin* Led :: getInput()
 //{

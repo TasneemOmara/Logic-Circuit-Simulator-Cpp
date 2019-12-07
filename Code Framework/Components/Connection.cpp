@@ -53,4 +53,8 @@ GraphicsInfo* Connection::getGraphics()
 {
 	return m_pGfxInfo;
 }
-;
+
+void Connection::set_selected(bool val)
+{
+	is_selected = val;
+}

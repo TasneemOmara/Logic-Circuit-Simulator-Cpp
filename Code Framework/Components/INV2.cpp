@@ -15,10 +15,10 @@ void INV2::Operate()
 
 // Function Draw
 // Draws 2-input INV2 gate
-void INV2::Draw(UI* pUI, bool selected)
+void INV2::Draw(UI* pUI)
 {
 	//Call output class and pass gate drawing info to it.
-	pUI->DrawINV(*m_pGfxInfo,selected);
+	pUI->DrawINV(*m_pGfxInfo, is_selected);
 }
 
 //returns status of outputpin

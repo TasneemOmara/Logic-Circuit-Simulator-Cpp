@@ -18,13 +18,18 @@ GraphicsInfo* Switch::getGraphics()
 {
 	return m_pGfxInfo;
 }
-;
 
-void Switch::Draw(UI* pUI, bool selected)
+
+void Switch::Draw(UI* pUI)
 {
 	//Call output class and pass gate drawing info to it.
-	pUI->DrawSwitch(*m_pGfxInfo, selected);
-};
+	pUI->DrawSwitch(*m_pGfxInfo, is_selected);
+}
+
+void set_selected(bool val)
+{
+	is_selected = val;
+}
 
  //InputPin* Switch::getInput() {
 	//return nullptr;

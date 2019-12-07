@@ -18,10 +18,10 @@ void XNOR2::Operate()
 
 // Function Draw
 // Draws 2-input OR gate
-void XNOR2::Draw(UI* pUI, bool selected)
+void XNOR2::Draw(UI* pUI)
 {
 	//Call output class and pass gate drawing info to it.
-	pUI->DrawXNOR2(*m_pGfxInfo);
+	pUI->DrawXNOR2(*m_pGfxInfo, is_selected);
 }
 
 //returns status of outputpin

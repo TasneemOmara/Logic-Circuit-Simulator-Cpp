@@ -16,11 +16,7 @@ protected:
 
 	string m_Label;    
 
-	
-	bool is_selected=false;
-
-	
-
+	bool is_selected;
 
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
 public:
@@ -46,6 +42,10 @@ public:
 	
 	virtual string getLabel() = 0;
 	virtual void setLabel(string L) = 0;
+
+	virtual void set_selected(bool val) = 0;
+
+
 
 	//Destructor must be virtual
 	virtual ~Component();

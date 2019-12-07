@@ -10,30 +10,31 @@ Select::Select(ApplicationManager *pApp) : Action(pApp)
 
 
 void Select::Execute(){
-    int count=0;
-    Component* CompList;
+
     bool is_selected;
+	int CompCount;
+	Component* CompList[MaxCompCount];
 
     UI* pUI = pManager->GetUI();
-    pManager->GetCompList(count, CompList);
-    
-    for (int i = 0; i < count; i++)
+    pManager->GetCompList(CompCount, CompList);
+   
+    for (int i = 0; i < CompCount; i++)
     {
-        is_selected = (CompList+i)->selected(pUI->getlast_point_clicked());
+		is_selected = CompList[i]->selected(pUI->getlast_point_clicked());
         if (is_selected)
         {
             index = i;
+			CompList[i]->set_selected(is_selected);
             break;
         }        
     }
-    CompList[index]->Draw(pUI,is_selected )
-    
 }
 
 
 int Select::getIndex(){
     return index;
 }
+
 void Select::Undo()
 {}
 
