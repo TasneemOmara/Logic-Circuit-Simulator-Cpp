@@ -54,6 +54,8 @@ void ADD_connection::Execute(){
 
     Comp1 = (temp_compList+selected_index1);
     Comp2 = (temp_compList+selected_index2);
+
+	Connection connect(Comp1->get)
 }
 
 void ADD_connection::Undo()
