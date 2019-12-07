@@ -154,9 +154,6 @@
     <ClInclude Include="Actions\Select.h">
       <Filter>CMUgrahpics Library</Filter>
     </ClInclude>
-    <ClInclude Include="Components\BUFF.h">
-      <Filter>CMUgrahpics Library</Filter>
-    </ClInclude>
     <ClInclude Include="Components\INV2.h">
       <Filter>CMUgrahpics Library</Filter>
     </ClInclude>
@@ -176,6 +173,9 @@
       <Filter>Actions</Filter>
     </ClInclude>
     <ClInclude Include="Components\Gate.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\BUFF.h">
       <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>

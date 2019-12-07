@@ -13,10 +13,11 @@ using namespace std;
 class ApplicationManager
 {
 
+	enum { MaxCompCount = 200 };
 
 private:
 	int CompCount;		//Actual number of Components
-	enum { MaxCompCount = 200 };
+	
 
 	Component* CompList[MaxCompCount];	//List of all Components (Array of pointers)
 
@@ -25,7 +26,7 @@ private:
 
 
 public:	
-	enum { MaxCompCount = 200 };	//Max no of Components	
+	
 	ApplicationManager(); //constructor
 
 	//Reads the required action from the user and returns the corresponding action type

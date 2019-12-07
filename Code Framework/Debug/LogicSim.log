@@ -1,17 +1,186 @@
 ﻿  AddANDgate2.cpp
+  AddNANDgate.cpp
+  AddNORgate.cpp
+  AddORgate.cpp
+  AddXNORgate.cpp
+  AddXORgate.cpp
+  ADD_BUFF.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.h(31,30): error C2535: 'GraphicsInfo *BUFF::getGraphics(void)': member function already defined or declared
+  ADD_connection.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.h(20): message : see declaration of 'BUFF::getGraphics'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(44,25): error C2535: 'void Connection::Operate(void)': member function already defined or declared
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(17): message : see declaration of 'Connection::Operate'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(47,40): error C2535: 'void Connection::Draw(UI *,bool)': member function already defined or declared
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(18): message : see declaration of 'Connection::Draw'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_connection.cpp(90): error C2259: 'Connection': cannot instantiate abstract class
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_connection.cpp(90): message : due to following members:
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_connection.cpp(90): message : 'void Component::Draw(UI *)': is abstract
+  ADD_INV2.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\component.h(28): message : see declaration of 'Component::Draw'
+  ADD_Label.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_INV2.cpp(37,33): error C2065: 'INV2_FANOUT': undeclared identifier
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_Label.cpp(22,42): error C2664: 'void ApplicationManager::GetCompList(int &,Component **)': cannot convert argument 2 from 'Component *' to 'Component **'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_Label.cpp(22,34): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  ADD_LED.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\ApplicationManager.h(43,7): message : see declaration of 'ApplicationManager::GetCompList'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): error C2259: 'Led': cannot instantiate abstract class
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : due to following members:
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'void Component::Draw(UI *)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(28): message : see declaration of 'Component::Draw'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'int Component::GetOutPinStatus(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(30): message : see declaration of 'Component::GetOutPinStatus'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'int Component::GetInputPinStatus(int)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(31): message : see declaration of 'Component::GetInputPinStatus'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'void Component::setInputPinStatus(int,STATUS)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(33): message : see declaration of 'Component::setInputPinStatus'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'InputPin *Component::getInput(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(38): message : see declaration of 'Component::getInput'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'OutputPin *Component::getOutput(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(39): message : see declaration of 'Component::getOutput'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'std::string Component::getLabel(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(43): message : see declaration of 'Component::getLabel'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37): message : 'void Component::setLabel(std::string)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(44): message : see declaration of 'Component::setLabel'
+  ADD_switch.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_LED.cpp(37,31): error C2065: 'LED_FANOUT': undeclared identifier
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): error C2259: 'Switch': cannot instantiate abstract class
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : due to following members:
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'bool Component::selected(Point)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(23): message : see declaration of 'Component::selected'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'void Component::Operate(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(27): message : see declaration of 'Component::Operate'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'int Component::GetOutPinStatus(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(30): message : see declaration of 'Component::GetOutPinStatus'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'int Component::GetInputPinStatus(int)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(31): message : see declaration of 'Component::GetInputPinStatus'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'void Component::setInputPinStatus(int,STATUS)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(33): message : see declaration of 'Component::setInputPinStatus'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'InputPin *Component::getInput(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(38): message : see declaration of 'Component::getInput'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'OutputPin *Component::getOutput(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(39): message : see declaration of 'Component::getOutput'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'std::string Component::getLabel(void)': is abstract
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(43): message : see declaration of 'Component::getLabel'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Actions\ADD_switch.cpp(35): message : 'void Component::setLabel(std::string)': is abstract
+  Select.cpp
   ApplicationManager.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Component.h(44): message : see declaration of 'Component::setLabel'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(44,25): error C2535: 'void Connection::Operate(void)': member function already defined or declared
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(17): message : see declaration of 'Connection::Operate'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(47,40): error C2535: 'void Connection::Draw(UI *,bool)': member function already defined or declared
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(18): message : see declaration of 'Connection::Draw'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.h(31,30): error C2535: 'GraphicsInfo *BUFF::getGraphics(void)': member function already defined or declared
+  CMUgraphics.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.h(20): message : see declaration of 'BUFF::getGraphics'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\CMUgraphicsLib\CMUgraphics.cpp(751,1): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(133): message : see declaration of 'strcpy'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\CMUgraphicsLib\CMUgraphics.cpp(1164,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : see declaration of 'sprintf'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\CMUgraphicsLib\CMUgraphics.cpp(1171,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : see declaration of 'sprintf'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\CMUgraphicsLib\CMUgraphics.cpp(1202,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : see declaration of 'sprintf'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\CMUgraphicsLib\CMUgraphics.cpp(1210,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : see declaration of 'sprintf'
   AND2.cpp
-  Component.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\CMUgraphicsLib\CMUgraphics.cpp(1357,23): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\AND2.cpp(46,62): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\AND2.cpp(47,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\AND2.cpp(47,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\AND2.cpp(47,83): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\AND2.cpp(48,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\AND2.cpp(48,10): error C2568: '<<': unable to resolve function overload
+  BUFF.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\AND2.cpp(48,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.h(31,30): error C2535: 'GraphicsInfo *BUFF::getGraphics(void)': member function already defined or declared
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.h(20): message : see declaration of 'BUFF::getGraphics'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.cpp(17,62): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.cpp(18,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.cpp(18,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.cpp(18,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.cpp(19,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.cpp(19,10): error C2568: '<<': unable to resolve function overload
   Connection.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\BUFF.cpp(19,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(44,25): error C2535: 'void Connection::Operate(void)': member function already defined or declared
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(17): message : see declaration of 'Connection::Operate'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(47,40): error C2535: 'void Connection::Draw(UI *,bool)': member function already defined or declared
   Gate.cpp
-  NAND2.cpp
-  NOR2.cpp
-  OR2.cpp
-  OutputPin.cpp
-  Switch.cpp
-  XNOR2.cpp
-  XOR2.cpp
-  led.cpp
-  main.cpp
+  INV2.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(18): message : see declaration of 'Connection::Draw'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\INV2.cpp(46,62): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\INV2.cpp(47,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\INV2.cpp(47,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\INV2.cpp(47,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\INV2.cpp(48,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\INV2.cpp(48,10): error C2568: '<<': unable to resolve function overload
   Generating Code...
-  LogicSim.vcxproj -> C:\Users\S-Hamdy\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Debug\LogicSim.exe
+  Compiling...
+  led.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\INV2.cpp(48,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(15,61): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(16,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(16,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(16,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(17,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(17,10): error C2568: '<<': unable to resolve function overload
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(17,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+  NAND2.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\led.cpp(51,1): error C2723: 'Led::set_selected': 'virtual' specifier illegal on function definition
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NAND2.cpp(47,63): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NAND2.cpp(48,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NAND2.cpp(48,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NAND2.cpp(48,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NAND2.cpp(49,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NAND2.cpp(49,10): error C2568: '<<': unable to resolve function overload
+  NOR2.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NAND2.cpp(49,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NOR2.cpp(48,62): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NOR2.cpp(49,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NOR2.cpp(49,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NOR2.cpp(49,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NOR2.cpp(50,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NOR2.cpp(50,10): error C2568: '<<': unable to resolve function overload
+  OR2.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\NOR2.cpp(50,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\OR2.cpp(50,61): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\OR2.cpp(51,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\OR2.cpp(51,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\OR2.cpp(51,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\OR2.cpp(52,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\OR2.cpp(52,10): error C2568: '<<': unable to resolve function overload
+  OutputPin.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\OR2.cpp(52,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(44,25): error C2535: 'void Connection::Operate(void)': member function already defined or declared
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(17): message : see declaration of 'Connection::Operate'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(47,40): error C2535: 'void Connection::Draw(UI *,bool)': member function already defined or declared
+  Switch.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Connection.h(18): message : see declaration of 'Connection::Draw'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(12,64): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(13,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(13,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(13,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(14,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(14,10): error C2568: '<<': unable to resolve function overload
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(14,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+  XNOR2.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\Switch.cpp(31,2): error C2065: 'is_selected': undeclared identifier
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XNOR2.cpp(49,63): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XNOR2.cpp(50,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XNOR2.cpp(50,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XNOR2.cpp(50,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XNOR2.cpp(51,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XNOR2.cpp(51,10): error C2568: '<<': unable to resolve function overload
+  XOR2.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XNOR2.cpp(51,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XOR2.cpp(50,62): error C2146: syntax error: missing ';' before identifier 'm_pGfxInfo'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XOR2.cpp(51,3): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XOR2.cpp(51,42): error C2297: '<<': illegal, right operand has type 'const char [3]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XOR2.cpp(51,82): error C2297: '<<': illegal, right operand has type 'const char [4]'
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XOR2.cpp(52,10): error C2563: mismatch in formal parameter list
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XOR2.cpp(52,10): error C2568: '<<': unable to resolve function overload
+  main.cpp
+  UI.cpp
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Components\XOR2.cpp(52,10): message : could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+  Generating Code...
+C:\Users\Ahmed El-Gohary\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\UI\UI.cpp(86,8): warning C4930: 'Point getlast_point_clicked(void)': prototyped function not called (was a variable definition intended?)

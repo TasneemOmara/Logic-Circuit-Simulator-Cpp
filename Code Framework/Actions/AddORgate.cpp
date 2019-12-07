@@ -10,9 +10,8 @@ AddORgate::AddORgate(ApplicationManager* pApp) :Action(pApp)
 AddORgate::~AddORgate(void)
 {
 }
-void AddORgate::Execute()
-{                             
-}
+
+
 void AddORgate::Execute() {
 //Get a Pointer to the user Interfaces
 UI* pUI = pManager->GetUI();
