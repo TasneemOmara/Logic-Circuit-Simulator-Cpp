@@ -1,5 +1,4 @@
-#ifndef _GATE_H
-#define _GATE_H
+#pragma once
 
 
 #include "InputPin.h"
@@ -37,5 +36,3 @@ public:
 
 
 };
-
-#endif

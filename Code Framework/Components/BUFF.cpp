@@ -1,5 +1,5 @@
 #include "BUFF.h"
-BUFF::BUFF(GraphicsInfo* r_pGfxInfo, int r_FanOut) : Gate(r_pGfxInfo, 2, r_FanOut) {
+BUFF::BUFF(GraphicsInfo* r_pGfxInfo, int r_FanOut):Gate(r_pGfxInfo, 2, r_FanOut) {
 	//InputPin* m_InputputPin = new InputPin;
    // m_InputputPin->setComponent(this);
 }

@@ -12,7 +12,7 @@
 #include "Actions\AddXNORgate.h"
 #include "Actions\AddXORgate.h"
 #include "Actions\Select.h"
-
+#include"Actions\Save.h"
 
 
 ApplicationManager::ApplicationManager()

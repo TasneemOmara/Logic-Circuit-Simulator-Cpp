@@ -169,11 +169,14 @@
     <ClInclude Include="Actions\ADD_INV2.h">
       <Filter>Actions</Filter>
     </ClInclude>
-    <ClInclude Include="Components\Gate.h">
-      <Filter>Components</Filter>
-    </ClInclude>
     <ClInclude Include="Actions\ADD_LED2.h">
       <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Save.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Gate.h">
+      <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -353,8 +356,6 @@
     <ClCompile Include="Actions\AddXORgate.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\ADD_Label.cpp" />
-    <ClCompile Include="Actions\Select.cpp" />
     <ClCompile Include="Components\BUFF.cpp">
       <Filter>Components</Filter>
     </ClCompile>
@@ -371,6 +372,12 @@
       <Filter>Actions</Filter>
     </ClCompile>
     <ClCompile Include="Actions\ADD_LED.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Select.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_Label.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
   </ItemGroup>
