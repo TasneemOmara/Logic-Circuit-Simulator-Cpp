@@ -15,7 +15,7 @@ ADD_Label::~ADD_Label(void) {
 
 void ADD_Label::Execute(){
     int count=0;
-    Component* CompList;
+    Component** CompList;
     //bool selected;
 
     UI* pUI = pManager->GetUI();

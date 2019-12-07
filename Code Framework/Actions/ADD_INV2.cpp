@@ -34,7 +34,7 @@ void ADD_INV2::Execute(){
     pGInfo->PointsList[0].y = Cy - gateHeight / 2;
     pGInfo->PointsList[1].x = Cx + gateWidth / 2;
     pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-    INV2* pA = new INV2(pGInfo, INV2_FANOUT);//***INV is wriiten depends on how u made it guys
+    INV2* pA = new INV2(pGInfo, INV2_FANOUT);
     pManager->AddComponent(pA);
 }
 

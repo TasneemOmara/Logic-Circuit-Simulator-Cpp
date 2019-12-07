@@ -9,7 +9,7 @@ Switch::Switch(GraphicsInfo* pGfxInfo,int r_FanOut):Component(pGfxInfo), m_Outpu
 
 void Switch::SaveComponent(int ID, fstream &fileToSave)
 {
-	fileToSave << "Switch" << "	" << ID << "	" << m_Label << "		" m_pGfxInfo->PointsList[0].x << "		"
+	fileToSave << "Switch" << "	" << ID << "	" << m_Label << "		" << m_pGfxInfo->PointsList[0].x << "		"
 		<< m_pGfxInfo->PointsList[0].y << "		" << m_pGfxInfo->PointsList[1].x << "		 " << m_pGfxInfo->PointsList[1].y
 		<< endl;
 }
