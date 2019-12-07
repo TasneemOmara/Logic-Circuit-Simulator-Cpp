@@ -12,10 +12,17 @@ GraphicsInfo* Switch::getGraphics()
 	return m_pGfxInfo;
 }
 ;
-virtual InputPin* Switch::getInput() {
-	return nullptr;
+
+void Switch::Draw(UI* pUI, bool selected)
+{
+	//Call output class and pass gate drawing info to it.
+	pUI->DrawSwitch(*m_pGfxInfo, selected);
+};
+
+ InputPin* Switch::getInput() {
+	//return nullptr;
 }
 
-virtual OutputPin* Switch::getOutput() {
+ OutputPin* Switch::getOutput() {
 
 }
