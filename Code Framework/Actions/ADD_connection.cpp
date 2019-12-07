@@ -8,7 +8,7 @@ ADD_connection::~ADD_connection(void){
 }
 
 void ADD_connection::Execute(){
-    //get selected
+  /*  //get selected
     int selected_index1=-1;
     int selected_index2=-1;
 
@@ -56,6 +56,42 @@ void ADD_connection::Execute(){
     Comp2 = (temp_compList+selected_index2);
 
 	Connection connect(Comp1->get)
+	*/
+
+
+	/////// Simple implementation (draw a line between two points)
+
+	//Get a Pointer to the user Interfaces
+	UI* pUI = pManager->GetUI();
+
+	//Print Action Message
+	pUI->PrintMsg("Create a connection between two points: Click the first point");
+
+	//Get Center point of the Gate
+	pUI->GetPointClicked(cx1, cy1);
+
+	//Clear Status Bar
+	pUI->ClearStatusBar();
+
+	//Print Action Message
+	pUI->PrintMsg("Create a connection between two points: Click the second point");
+
+	pUI->GetPointClicked(cx2, cy2);
+
+	//Clear Status Bar
+	pUI->ClearStatusBar();
+
+	GraphicsInfo* pGInfo = new GraphicsInfo(2);
+	pGInfo->PointsList[0].x = cx1;
+	pGInfo->PointsList[0].y = cy1;
+	pGInfo->PointsList[1].x = cx2;
+	pGInfo->PointsList[1].y = cy2;
+
+	Connection* pA = new Connection(pGInfo);
+
+	pManager->AddComponent(pA);
+
+
 }
 
 void ADD_connection::Undo()

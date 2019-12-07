@@ -30,6 +30,16 @@ bool Gate::selected(Point k) {
 		return false;
 	}
 }
+
+string Gate::getLabel()
+{
+	return m_Label;
+}
+void Gate::setLabel(string L)
+{
+	m_Label = L;
+}
+
 //	InputPin* Gate::getInput()
 	//{
 //		return m_InputPins[0];

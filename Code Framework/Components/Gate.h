@@ -28,15 +28,17 @@ public:
 	Gate(GraphicsInfo* pGfxInfo, int r_Inputs, int r_FanOut);
 	bool selected(Point k);
 
+	virtual string getLabel();
+	virtual void setLabel(string L);
+
 	//inhertied Save/Load functions 
 	virtual void SaveComponent(int ID, fstream &fileToSave) {};
-	virtual void LoadComponent(fstream &fileToLoad) {};
 
 	virtual GraphicsInfo* getGraphics();
 	
 
-	//virtual InputPin* getInput(); 
-	//virtual OutputPin* getOutput();
+	virtual InputPin* getInput(); 
+	virtual OutputPin* getOutput();
 
 };
 

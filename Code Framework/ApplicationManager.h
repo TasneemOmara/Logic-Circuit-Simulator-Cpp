@@ -13,7 +13,6 @@ using namespace std;
 class ApplicationManager
 {
 
-	enum { MaxCompCount = 200 };	//Max no of Components	
 
 private:
 	int CompCount;		//Actual number of Components
@@ -23,6 +22,7 @@ private:
 
 
 public:	
+	enum { MaxCompCount = 200 };	//Max no of Components	
 	ApplicationManager(); //constructor
 
 	//Reads the required action from the user and returns the corresponding action type
@@ -42,11 +42,6 @@ public:
 	//Adds a new component to the list of components
 	void AddComponent(Component* pComp);
 
-	//Save the circuit
-	void Save(fstream &fileToSave);
-
-	//Load the circuit
-	void Load(fstream &fileToLoad);
 
 	//destructor
 	~ApplicationManager();

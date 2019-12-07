@@ -48,6 +48,7 @@ void AND2::SaveComponent(int ID, fstream &fileToSave)
 		<< " )" << endl;
 }
 
+
  GraphicsInfo* AND2:: getGraphics()
 {
 	 return m_pGfxInfo;

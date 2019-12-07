@@ -1,9 +1,11 @@
 #include "Connection.h"
 
-Connection::Connection(OutputPin *pSrcPin,InputPin *pDstPin):Component(r_GfxInfo)	
+//::Connection(OutputPin *pSrcPin,InputPin *pDstPin):Component(r_GfxInfo)	
+//Connection::Connection(const GraphicsInfo& r_GfxInfo, Component* pS = NULL, Component* pD = NULL, int Pin = 0)
+Connection::Connection( GraphicsInfo* r_GfxInfo)
 {
-	SrcPin = pSrcPin;
-	DstPin = pDstPin;
+	//SrcPin = pSrcPin;
+	//DstPin = pDstPin;
 }
 void Connection::setSourcePin(OutputPin *pSrcPin)
 {	SrcPin = pSrcPin;	}
