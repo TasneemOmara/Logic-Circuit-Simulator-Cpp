@@ -14,12 +14,13 @@ Gate::Gate(GraphicsInfo* pGfxInfo, int r_Inputs, int r_FanOut):Component(pGfxInf
 	for(int i=0; i<m_Inputs; i++)
 		m_InputPins[i].setComponent(this);
 }
+
 bool Gate::selected(Point k) {
 	int x_min = m_pGfxInfo->PointsList[0].x;
 	int x_max = m_pGfxInfo->PointsList[1].x;
 	int y_min = m_pGfxInfo->PointsList[0].y;
 	int y_max = m_pGfxInfo->PointsList[1].y;
-	if (k.x > x_min && k.x < x_max && k.y>y_min && k.y < y_max) {
+	if (k.x > x_min&& k.x < x_max && k.y>y_min&& k.y < y_max) {
 		is_selected = true;
 		return true;
 	}
@@ -29,3 +30,13 @@ bool Gate::selected(Point k) {
 		return false;
 	}
 }
+
+	InputPin* Gate::getInput()
+	{
+		return m_InputPins[0];
+	}
+
+	OutputPin* Gate::getoutput()
+	{
+		return m_OutputPin;
+	}

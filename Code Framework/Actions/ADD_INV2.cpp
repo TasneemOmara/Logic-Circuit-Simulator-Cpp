@@ -17,7 +17,7 @@ void ADD_INV2::Execute(){
     UI* pUI = pManager->GetUI();
 
     //Print Action Message
-    pUI->PrintMsg("1-Input inverter Gate: Click to add the gate");
+    pUI->PrintMsg("Input inverter Gate: Click to add the gate");
 
     //Get Center point of the Gate
     pUI->GetPointClicked(Cx, Cy);
