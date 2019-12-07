@@ -44,6 +44,9 @@ public:
 	//Save the circuit
 	void Save(fstream &fileToSave);
 
+	//Load the circuit
+	void Load(fstream &fileToLoad);
+
 	//destructor
 	~ApplicationManager();
 };
