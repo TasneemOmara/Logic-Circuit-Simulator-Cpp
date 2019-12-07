@@ -100,7 +100,6 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 		delete pAct;
 		pAct = NULL;
 	}
-}
 ////////////////////////////////////////////////////////////////////
 
 void ApplicationManager::UpdateInterface()
@@ -130,6 +129,25 @@ ApplicationManager::Save(fstream &fileToSave) {
 		for (size_t i = 0; i < CompCount; i++)
 		{
 			CompList[i]->SaveComponent(i , fileToSave);
+		}
+	}
+	else
+	{
+		pUI->PrintMsg("Unable to open the file");
+	}
+
+	fileToSave.close();
+}
+
+////////////////////////////////////////////////////////////////////
+
+ApplicationManager::Load(fstream &fileToLoad) {
+	if (fileToLoad.is_open())
+	{
+		fileToLoad >> CompCount;
+		for (size_t i = 0; i < CompCount; i++)
+		{
+			CompList[i]->SaveComponent(i, fileToSave);
 		}
 	}
 	else

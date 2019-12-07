@@ -21,6 +21,7 @@ private:
 	int m_Conn;		//Actual No. of connections connected to that output pin
 public:
 	OutputPin(int r_FanOut);	
+	OutputPin();
 	bool ConnectTo(Connection *r_Conn);	//connect to a new connection
 };
 

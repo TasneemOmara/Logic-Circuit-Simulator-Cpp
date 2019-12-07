@@ -13,7 +13,7 @@ protected:
 	InputPin m_InputputPin;	//BUFF has only 1 inputputPin
     OutputPin m_OutputPin;	//BUFF has only 1 OutputPin
 public:
-	BUFF(GraphicsInfo* pGfxInfo);
+	//BUFF(GraphicsInfo* pGfxInfo);
     BUFF(GraphicsInfo* pGfxInfo, int r_FanOut);
 	
 	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
@@ -30,6 +30,10 @@ public:
 	 void SaveComponent(int ID, fstream& fileToSave); //save function
 
 	 GraphicsInfo* getGraphics();
+
+	//virtual OutputPin* getOutput() ;
+	//virtual InputPin* getInput() ;
+
 
 
 };

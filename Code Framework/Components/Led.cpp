@@ -19,11 +19,11 @@ GraphicsInfo* Led::getGraphics()
 {
 	return m_pGfxInfo;
 }
-InputPin* getInput()
+InputPin* Led :: getInput()
 {
 	return m_InputputPin;
 }
 
 OutputPin* getOutput() {
-	return nullptr}
+	return nullptr;}
 

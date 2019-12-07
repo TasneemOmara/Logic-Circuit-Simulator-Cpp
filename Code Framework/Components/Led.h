@@ -9,7 +9,8 @@
 class Led:public Component
 {
 protected:
-	InputPin m_InputputPin;	//Led has only 1 inputputPin
+	InputPin* m_InputputPin;	//Led has only 1 inputputPin
+
 public:
 	Led(GraphicsInfo* pGfxInfo);
 	virtual InputPin* getInput();
