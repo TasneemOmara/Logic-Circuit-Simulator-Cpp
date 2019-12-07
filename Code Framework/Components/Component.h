@@ -19,7 +19,7 @@ public:
 	virtual void Draw(UI* , bool selected) = 0;	//for each component to Draw itself
 
 
-	//----------------------****************************************************** Edit 7/12
+	
 
 	
 	

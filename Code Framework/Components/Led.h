@@ -13,7 +13,7 @@ protected:
 public:
 	Led(GraphicsInfo* pGfxInfo);
 	
-
+	virtual GraphicsInfo* getGraphics();
 };
 
 #endif
