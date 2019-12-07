@@ -34,8 +34,7 @@ void ADD_LED2::Execute(){
     pGInfo->PointsList[0].y = Cy - gateHeight / 2;
     pGInfo->PointsList[1].x = Cx + gateWidth / 2;
     pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-    led* pA = new led(pGInfo, LED_FANOUT);//***how LED is wriiten depends on how u made it guys
-    pManager->AddComponent(pA);
+    Led* pA = new Led(pGInfo, LED_FANOUT);
 }
 
 void ADD_LED2::Undo()

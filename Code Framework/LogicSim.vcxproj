@@ -73,6 +73,7 @@
     <ClInclude Include="Actions\ADD_connection.h" />
     <ClInclude Include="Actions\ADD_INV2.h" />
     <ClInclude Include="Actions\ADD_Label.h" />
+    <ClInclude Include="Actions\ADD_LED2.h" />
     <ClInclude Include="Actions\ADD_switch.h" />
     <ClInclude Include="Actions\Select.h" />
     <ClInclude Include="ApplicationManager.h" />
@@ -128,6 +129,7 @@
     <ClCompile Include="Actions\ADD_connection.cpp" />
     <ClCompile Include="Actions\ADD_INV2.cpp" />
     <ClCompile Include="Actions\ADD_Label.cpp" />
+    <ClCompile Include="Actions\ADD_LED.cpp" />
     <ClCompile Include="Actions\ADD_switch.cpp" />
     <ClCompile Include="Actions\Select.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />

@@ -83,9 +83,6 @@
     <ClInclude Include="Components\Component.h">
       <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="Components\Gate.h">
-      <Filter>Components</Filter>
-    </ClInclude>
     <ClInclude Include="Components\AND2.h">
       <Filter>Components</Filter>
     </ClInclude>
@@ -170,6 +167,12 @@
       <Filter>Actions</Filter>
     </ClInclude>
     <ClInclude Include="Actions\ADD_INV2.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Gate.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_LED2.h">
       <Filter>Actions</Filter>
     </ClInclude>
   </ItemGroup>
@@ -365,6 +368,9 @@
       <Filter>Actions</Filter>
     </ClCompile>
     <ClCompile Include="Actions\ADD_INV2.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_LED.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
   </ItemGroup>

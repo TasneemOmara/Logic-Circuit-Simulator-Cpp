@@ -78,6 +78,7 @@ enum FANOUT
 	Switch_FANOUT = 5,
 	BUFF_FANOUT = 5,
 	INV2_FANOUT=5,
+	LED_FANOUT=5,
 
 	
 };
