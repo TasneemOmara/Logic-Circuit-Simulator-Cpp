@@ -33,7 +33,7 @@ void AddNORgate::Execute(){
     pGInfo->PointsList[0].y = Cy - gateHeight / 2;
     pGInfo->PointsList[1].x = Cx + gateWidth / 2;
     pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-    NOR2* pA = new NOR2(pGInfo, NOR_FANOUT);
+    NOR2* pA = new NOR2(pGInfo, NOR2_FANOUT);
     pManager->AddComponent(pA);
 }
 

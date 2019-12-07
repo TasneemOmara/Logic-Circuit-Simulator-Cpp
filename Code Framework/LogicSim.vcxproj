@@ -75,6 +75,7 @@
     <ClInclude Include="Actions\ADD_Label.h" />
     <ClInclude Include="Actions\ADD_LED2.h" />
     <ClInclude Include="Actions\ADD_switch.h" />
+    <ClInclude Include="Actions\Save.h" />
     <ClInclude Include="Actions\Select.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h">

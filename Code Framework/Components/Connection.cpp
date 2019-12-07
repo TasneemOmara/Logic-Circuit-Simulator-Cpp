@@ -25,7 +25,7 @@ void Connection::Operate()
 	DstPin->setStatus((STATUS)SrcPin->getStatus());
 }
 
-void Connection::Draw(UI* pUI)
+void Connection::Draw(UI* pUI, bool selected)
 {
 	pUI->DrawConnection(*m_pGfxInfo);
 }

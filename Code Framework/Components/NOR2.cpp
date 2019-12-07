@@ -18,7 +18,7 @@ void NOR2::Operate()
 
 // Function Draw
 // Draws 2-input OR gate
-void NOR2::Draw(UI* pUI)
+void NOR2::Draw(UI* pUI, bool selected)
 {
 	//Call output class and pass gate drawing info to it.
 	pUI->DrawNOR2(*m_pGfxInfo);
