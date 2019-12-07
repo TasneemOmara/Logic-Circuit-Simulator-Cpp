@@ -165,6 +165,8 @@ public:
 	
 	void PrintMsg(string msg) const;	//Print a message on Status bar
 
+	void PrintMsg2(string msg , int cx, int cy) const;   //Print a message on a specified lacation (Label)
+
 	~UI();
 };
 

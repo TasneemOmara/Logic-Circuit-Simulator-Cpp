@@ -83,6 +83,7 @@ ActionType UI::GetUserAction() const
 {	
 	int x,y;
 	pWind->WaitMouseClick(x, y);	//Get the coordinates of the user click
+	Point LastClicked;
 	LastClicked.x = x;
 	LastClicked.y = y;
 	if(AppMode == DESIGN )	//application is in design mode
@@ -441,6 +442,20 @@ void UI::DrawConnection(const GraphicsInfo &r_GfxInfo, bool selected) const
 	//**************************end edit
 }
 
+
+
+void UI::PrintMsg2(string msg, int cx, int cy) const
+{
+	ClearStatusBar();	//Clear Status bar to print message on it
+	// Set the Message offset from the Status Bar
+	int MsgX = cx;
+	int MsgY = cy;
+
+	// Print the Message
+	pWind->SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
+	pWind->SetPen(MsgColor);
+	pWind->DrawString(MsgX,  MsgY, msg);
+}
 
 UI::~UI()
 {
