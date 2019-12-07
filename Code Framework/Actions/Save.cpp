@@ -15,6 +15,7 @@ void Save::Execute()
 	fileToSave.open("Circuit.txt", ios::out);
 	pManager->Save(fileToSave);
 	int CompCount;
+
 	Component* CompList[MaxCompCount];
 	GetCompList(CompCount, CompList);
 

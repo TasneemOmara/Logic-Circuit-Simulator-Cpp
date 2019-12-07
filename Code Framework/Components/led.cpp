@@ -12,9 +12,9 @@ Led::Led(GraphicsInfo* pGfxInfo):Component(pGfxInfo)
 
 void Led::SaveComponent(int ID, fstream &fileToSave)
 {
-	fileToSave << "Led " << "	" << ID << m_Label << "		" << "( " << m_pGfxInfo->PointsList[0].x << " , "
-		<< m_pGfxInfo->PointsList[0].y << " ) " << "	" << "( " << m_pGfxInfo->PointsList[1].x << " , " << m_pGfxInfo->PointsList[1].y
-		<< " )" << endl;
+	fileToSave << "LED" << "	" << ID << "	" << m_Label << "		" m_pGfxInfo->PointsList[0].x << "		"
+		<< m_pGfxInfo->PointsList[0].y << "		" << m_pGfxInfo->PointsList[1].x << "		 " << m_pGfxInfo->PointsList[1].y
+		<< endl;
 }
 GraphicsInfo* Led::getGraphics()
 {

@@ -25,7 +25,7 @@ void Load::Execute()
 		for (size_t i = 0; i < CompCount; i++)   //looping for the number of components to get the rest of the lines
 		{
 			getline(fileToLoad, LineToLoad);   //for every component, get the line in string 
-			string CompInfo[6];                //array of strings to store the loaded words in 
+			string CompInfo[7];                //array of strings to store the loaded words in 
 
 			string input = "";                 //string to store every input word in to be stored later in the array of strings
 			for (auto x : LineToLoad)          // looping for every input in the line
@@ -44,10 +44,10 @@ void Load::Execute()
 
 			string compType = CompInfo[0];
 			string Label = CompInfo[1];
-			int x1 = stoi(CompInfo[2]);
-			int y1 = stoi(CompInfo[3]);
-			int x2 = stoi(CompInfo[4]);
+			int x1 = stoi(CompInfo[3]);
+			int y1 = stoi(CompInfo[4]);
 			int x2 = stoi(CompInfo[5]);
+			int x2 = stoi(CompInfo[6]);
 
 			GraphicsInfo GraphicsInfo * pGInfo = new GraphicsInfo(2);
 			pGInfo->PointsList[0].x = x1;
@@ -69,7 +69,7 @@ void Load::Execute()
 			case "Switch":
 				Switch* pA = new Switch(pGInfo, Switch_FANOUT);
 			case "NAND2":
-				NAND* pA = new NAND(pGInfo, NAND_FANOUT);
+				NAND2* pA = new NAND2(pGInfo, NAND_FANOUT);
 			case "NOR2":
 				NOR2* pA = new NOR2(pGInfo, NOR_FANOUT);
 			case "OR2":

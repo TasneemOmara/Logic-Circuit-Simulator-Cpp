@@ -45,9 +45,9 @@ void NOR2::setInputPinStatus(int n, STATUS s)
 
 void NOR2::SaveComponent(int ID, fstream &fileToSave)
 {
-	fileToSave << "NOR2 Gate " << "	" << ID << m_Label << "		" << "( " << m_pGfxInfo->PointsList[0].x << " , "
-		<< m_pGfxInfo->PointsList[0].y << " ) " << "	" << "( " << m_pGfxInfo->PointsList[1].x << " , " << m_pGfxInfo->PointsList[1].y
-		<< " )" << endl;
+	fileToSave << "NOR2" << "	" << ID << "	" << m_Label << "		" m_pGfxInfo->PointsList[0].x << "		"
+		<< m_pGfxInfo->PointsList[0].y << "		" << m_pGfxInfo->PointsList[1].x << "		 " << m_pGfxInfo->PointsList[1].y
+		<< endl;
 }
 
 GraphicsInfo* NOR2::getGraphics()

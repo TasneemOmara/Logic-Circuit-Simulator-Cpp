@@ -14,9 +14,9 @@ BUFF::BUFF(GraphicsInfo* r_pGfxInfo, int r_FanOut):Gate(r_pGfxInfo, 2, r_FanOut)
 
 void BUFF::SaveComponent(int ID, fstream &fileToSave)
 {
-	fileToSave << "Buffer " << "	" << ID << m_Label << "		" << "( " << m_pGfxInfo->PointsList[0].x << " , "
-		<< m_pGfxInfo->PointsList[0].y << " ) " << "	" << "( " << m_pGfxInfo->PointsList[1].x << " , " << m_pGfxInfo->PointsList[1].y
-		<< " )" << endl;
+	fileToSave << "BUFF" << "	" << ID << "	" << m_Label << "		" m_pGfxInfo->PointsList[0].x << "		"
+		<< m_pGfxInfo->PointsList[0].y << "		" << m_pGfxInfo->PointsList[1].x << "		 " << m_pGfxInfo->PointsList[1].y
+		<< endl;
 }
 
 GraphicsInfo* BUFF::getGraphics()
