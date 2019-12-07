@@ -167,6 +167,9 @@ public:
 
 	void PrintMsg2(string msg , int cx, int cy) const;   //Print a message on a specified lacation (Label)
 
+
+	////////////////////////////////////////////////////////////////////////
+	void ClearLabel(int xx, int yy) const;  //clear the label area
 	~UI();
 };
 

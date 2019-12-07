@@ -458,6 +458,20 @@ void UI::PrintMsg2(string msg, int cx, int cy) const
 	pWind->DrawString(MsgX,  MsgY, msg);
 }
 
+void UI::ClearLabel(int xx , int yy)const
+{
+	// Set the Message offset from the Status Bar
+	int MsgX = xx;
+	int MsgY = yy;
+
+	//Overwrite using bachground color to erase the message
+	pWind->SetPen(BkGrndColor);
+	pWind->SetBrush(BkGrndColor);
+
+	//**************************************************----------------------------
+	pWind->DrawRectangle(MsgX, yy, 80, 4);  //assuming that the Label won't cover more than 80 pixels width and the 4 pixels height
+}
+
 UI::~UI()
 {
 	delete pWind;
