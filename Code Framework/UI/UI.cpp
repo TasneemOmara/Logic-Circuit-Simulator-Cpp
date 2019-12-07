@@ -83,6 +83,7 @@ ActionType UI::GetUserAction() const
 {	
 	int x,y;
 	pWind->WaitMouseClick(x, y);	//Get the coordinates of the user click
+	Point getlast_point_clicked();
 	Point LastClicked;
 	LastClicked.x = x;
 	LastClicked.y = y;
@@ -179,7 +180,7 @@ void UI::PrintMsg(string msg) const
 	pWind->DrawString(MsgX, height - MsgY, msg);
 }
 //////////////////////////////////////////////////////////////////////////////////
-Point UI::getlast_point_clicked(Point LastClicked) {
+Point UI::getlast_point_clicked() {
 	return LastClicked;
 }
 void UI::ClearStatusBar()const
