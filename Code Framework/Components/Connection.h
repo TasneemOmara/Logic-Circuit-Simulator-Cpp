@@ -15,7 +15,7 @@ public:
 	Connection (OutputPin *pSrcPin,InputPin *pDstPin);
 
 	virtual void Operate() ;	//Calculates the output according to the inputs
-	virtual void Draw(UI* );	//for each component to Draw itself
+	virtual void Draw(UI*, bool selected);	//for each component to Draw itself
 
 	
 	void setSourcePin(OutputPin *pSrcPin);
