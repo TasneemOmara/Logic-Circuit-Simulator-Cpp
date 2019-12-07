@@ -18,13 +18,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -64,6 +64,19 @@
   <ItemGroup>
     <ClInclude Include="Actions\Action.h" />
     <ClInclude Include="Actions\AddANDgate2.h" />
+    <ClInclude Include="Actions\AddNANDgate.h" />
+    <ClInclude Include="Actions\AddNORgate.h" />
+    <ClInclude Include="Actions\AddORgate.h" />
+    <ClInclude Include="Actions\AddXNORgate.h" />
+    <ClInclude Include="Actions\AddXORgate.h" />
+    <ClInclude Include="Actions\ADD_BUFF.h" />
+    <ClInclude Include="Actions\ADD_connection.h" />
+    <ClInclude Include="Actions\ADD_INV.h" />
+    <ClInclude Include="Actions\ADD_Label.h" />
+    <ClInclude Include="Actions\ADD_LED.h" />
+    <ClInclude Include="Actions\ADD_switch.h" />
+    <ClInclude Include="Actions\Select.h" />
+    <ClInclude Include="Actions\select1.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -88,17 +101,39 @@
     <ClInclude Include="CMUgraphicsLib\version.h" />
     <ClInclude Include="CMUgraphicsLib\windowinput.h" />
     <ClInclude Include="Components\AND2.h" />
+    <ClInclude Include="Components\BUFF.h" />
     <ClInclude Include="Components\Component.h" />
     <ClInclude Include="Components\Connection.h" />
     <ClInclude Include="Components\Gate.h" />
     <ClInclude Include="Components\InputPin.h" />
+    <ClInclude Include="Components\INV2.h" />
+    <ClInclude Include="Components\Led.h" />
+    <ClInclude Include="Components\NAND2.h" />
+    <ClInclude Include="Components\NOR2.h" />
+    <ClInclude Include="Components\OR2.h" />
     <ClInclude Include="Components\OutputPin.h" />
     <ClInclude Include="Components\Pin.h" />
+    <ClInclude Include="Components\Switch.h" />
+    <ClInclude Include="Components\XNOR2.h" />
+    <ClInclude Include="Components\XOR2.h" />
     <ClInclude Include="Defs.H" />
     <ClInclude Include="UI\UI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Actions\AddANDgate2.cpp" />
+    <ClCompile Include="Actions\AddNANDgate.cpp" />
+    <ClCompile Include="Actions\AddNORgate.cpp" />
+    <ClCompile Include="Actions\AddORgate.cpp" />
+    <ClCompile Include="Actions\AddXNORgate.cpp" />
+    <ClCompile Include="Actions\AddXORgate.cpp" />
+    <ClCompile Include="Actions\ADD_BUFF.cpp" />
+    <ClCompile Include="Actions\ADD_connection.cpp" />
+    <ClCompile Include="Actions\ADD_INV.cpp" />
+    <ClCompile Include="Actions\ADD_Label.cpp" />
+    <ClCompile Include="Actions\ADD_LED.cpp" />
+    <ClCompile Include="Actions\ADD_switch.cpp" />
+    <ClCompile Include="Actions\Select.cpp" />
+    <ClCompile Include="Actions\select1.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
     <ClCompile Include="CMUgraphicsLib\auxil.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -139,12 +174,21 @@
     <ClCompile Include="CMUgraphicsLib\mousequeue.cpp" />
     <ClCompile Include="CMUgraphicsLib\windowinput.cpp" />
     <ClCompile Include="Components\AND2.cpp" />
+    <ClCompile Include="Components\BUFF.cpp" />
     <ClCompile Include="Components\Component.cpp" />
     <ClCompile Include="Components\Connection.cpp" />
     <ClCompile Include="Components\Gate.cpp" />
     <ClCompile Include="Components\InputPin.cpp" />
+    <ClCompile Include="Components\INV2.cpp" />
+    <ClCompile Include="Components\led.cpp" />
+    <ClCompile Include="Components\NAND2.cpp" />
+    <ClCompile Include="Components\NOR2.cpp" />
+    <ClCompile Include="Components\OR2.cpp" />
     <ClCompile Include="Components\OutputPin.cpp" />
     <ClCompile Include="Components\Pin.cpp" />
+    <ClCompile Include="Components\Switch.cpp" />
+    <ClCompile Include="Components\XNOR2.cpp" />
+    <ClCompile Include="Components\XOR2.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UI\UI.cpp" />
   </ItemGroup>

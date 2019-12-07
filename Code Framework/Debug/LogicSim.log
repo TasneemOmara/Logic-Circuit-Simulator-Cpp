@@ -1,0 +1,17 @@
+﻿  AddANDgate2.cpp
+  ApplicationManager.cpp
+  AND2.cpp
+  Component.cpp
+  Connection.cpp
+  Gate.cpp
+  NAND2.cpp
+  NOR2.cpp
+  OR2.cpp
+  OutputPin.cpp
+  Switch.cpp
+  XNOR2.cpp
+  XOR2.cpp
+  led.cpp
+  main.cpp
+  Generating Code...
+  LogicSim.vcxproj -> C:\Users\S-Hamdy\Desktop\Logic-Circuit-Simulator-Cpp\Code Framework\Debug\LogicSim.exe
