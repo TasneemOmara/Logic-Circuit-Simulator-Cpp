@@ -10,6 +10,12 @@ public:
 	Select(ApplicationManager *App);
 	void Execute();
 	int getIndex();
-	
+
+	////////////////////////////////////////////////////////////////////////////////////
+	//To undo this action (code depends on action type)
+	virtual void Undo() ;
+
+	//To redo this action (code depends on action type)
+	virtual void Redo() ;
 };
 

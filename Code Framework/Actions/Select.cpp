@@ -1,5 +1,6 @@
-#include "select1.h"
+#include "Select.h"
 #include "..\ApplicationManager.h"
+#include "..\UI\UI.h"
 
 
 Select::Select(ApplicationManager *App) : Action(App)
@@ -10,7 +11,7 @@ Select::Select(ApplicationManager *App) : Action(App)
 
 void Select::Execute(){
     int count=0;
-    Component* CompList;
+    Component *CompList;
     bool selected;
 
     UI* pUI = pManager->GetUI();
@@ -25,7 +26,7 @@ void Select::Execute(){
             break;
         }        
     }
-    CompList[index]->Draw(pUI,selected )
+	CompList[index].Draw(pUI, selected);
     
 }
 
@@ -33,3 +34,12 @@ void Select::Execute(){
 int Select::getIndex(){
     return index;
 }
+
+////////////////////////////////////////////////////////////////////////////////////
+//To undo this action (code depends on action type)
+void Select::Undo()
+{};
+
+//To redo this action (code depends on action type)
+void Select::Redo()
+{};
