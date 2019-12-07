@@ -34,7 +34,7 @@ void ADD_Label::Execute(){
 
 
 
-    GraphicsInfo* pointer = CompList[x]. getGraphics;
+    GraphicsInfo* pointer = CompList[x]. getGraphics();
 	int Cx1, Cy1, Cx2, Cy2;
     Cx1 = pointer -> PointsList[0].x;
     Cy1 = pointer -> PointsList[0].y;
@@ -45,7 +45,7 @@ void ADD_Label::Execute(){
     int height = pUI->getGateHeight ();
    
    int label_x = Cx1;
-   int label_y = Cy1;
+   int label_y = Cy1 + 2;
 
    //Clear Status Bar
    pUI->ClearStatusBar();
