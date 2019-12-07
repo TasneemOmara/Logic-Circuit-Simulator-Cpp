@@ -8,6 +8,7 @@
 */
 
 #include "Gate.h"
+#include "../Defs.H"
 
 class AND2:public Gate
 {
@@ -21,7 +22,8 @@ public:
 
 	virtual void setInputPinStatus(int n, STATUS s);	//set status of Inputpin # n, to be used by connection class.
 
-	virtual void SaveComponent(int ID, fstream &fileToSave); //save function
+	virtual void SaveComponent(int ID, fstream &fileToSave);
+	virtual void LoadComponent(fstream &fileToLoad);
 
 	virtual GraphicsInfo* getGraphics();
 

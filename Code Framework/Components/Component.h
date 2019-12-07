@@ -32,7 +32,8 @@ public:
 
 	//virtual void setInputPinStatus(int n, STATUS s)=0;	//set status of Inputpin # n, to be used by connection class.
 
-	virtual void SaveComponent(int ID, fstream &fileToSave ) = 0; //outputs the line defining the saved component 
+	virtual void SaveComponent(int ID, fstream &fileToSave) = 0; //outputs the line defining the saved component 
+	virtual void LoadComponent(int ID, fstream &fileToLoad) = 0; // Inputs the component in the compList
 
 	//virtual InputPin* getInput() = 0;
 	//virtual OutputPin* getOutput() = 0;

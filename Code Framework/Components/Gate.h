@@ -14,6 +14,7 @@
 #include "Component.h"
 #include <iostream>
 #include <fstream>
+
 using namespace std;
 
 class Gate:public Component
@@ -27,7 +28,9 @@ public:
 	Gate(GraphicsInfo* pGfxInfo, int r_Inputs, int r_FanOut);
 	bool selected(Point k);
 
-	virtual void SaveComponent(int ID, fstream &fileToSave) = 0;
+	//inhertied Save/Load functions 
+	virtual void SaveComponent(int ID, fstream &fileToSave) {};
+	virtual void LoadComponent(fstream &fileToLoad) {};
 
 	virtual GraphicsInfo* getGraphics();
 	
