@@ -13,7 +13,7 @@ void Select::Execute(){
 
     bool is_selected;
 	int CompCount;
-	Component* CompList[MaxCompCount];
+	Component* CompList[200];
 
     UI* pUI = pManager->GetUI();
     pManager->GetCompList(CompCount, CompList);
@@ -24,7 +24,7 @@ void Select::Execute(){
         if (is_selected)
         {
             index = i;
-			CompList[i]->set_selected(is_selected);
+			
             break;
         }        
     }
