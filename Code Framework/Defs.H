@@ -77,6 +77,7 @@ enum FANOUT
 	XNOR2_FANOUT = 5,
 	Switch_FANOUT = 5,
 	BUFF_FANOUT = 5,
+	INV2_FANOUT=5,
 
 	
 };

@@ -32,8 +32,8 @@ public:
 	virtual GraphicsInfo* getGraphics();
 	
 
-	virtual InputPin* getInput(); 
-	virtual OutputPin* getOutput();
+	//virtual InputPin* getInput(); 
+	//virtual OutputPin* getOutput();
 
 };
 

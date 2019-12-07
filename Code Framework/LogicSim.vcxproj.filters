@@ -112,9 +112,6 @@
     <ClInclude Include="UI\UI.h">
       <Filter>UI</Filter>
     </ClInclude>
-    <ClInclude Include="Components\Led.h">
-      <Filter>Components</Filter>
-    </ClInclude>
     <ClInclude Include="Components\NAND2.h">
       <Filter>Components</Filter>
     </ClInclude>
@@ -133,16 +130,7 @@
     <ClInclude Include="Components\XOR2.h">
       <Filter>Components</Filter>
     </ClInclude>
-    <ClInclude Include="Actions\ADD_BUFF.h">
-      <Filter>Actions</Filter>
-    </ClInclude>
     <ClInclude Include="Actions\ADD_connection.h">
-      <Filter>Actions</Filter>
-    </ClInclude>
-    <ClInclude Include="Actions\ADD_INV.h">
-      <Filter>Actions</Filter>
-    </ClInclude>
-    <ClInclude Include="Actions\ADD_LED.h">
       <Filter>Actions</Filter>
     </ClInclude>
     <ClInclude Include="Actions\ADD_switch.h">
@@ -163,7 +151,25 @@
     <ClInclude Include="Actions\AddXORgate.h">
       <Filter>Actions</Filter>
     </ClInclude>
-    <ClInclude Include="Actions\select1.h">
+    <ClInclude Include="Actions\ADD_Label.h">
+      <Filter>CMUgrahpics Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Select.h">
+      <Filter>CMUgrahpics Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\BUFF.h">
+      <Filter>CMUgrahpics Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\INV2.h">
+      <Filter>CMUgrahpics Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\Led.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_BUFF.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\ADD_INV2.h">
       <Filter>Actions</Filter>
     </ClInclude>
   </ItemGroup>
@@ -305,9 +311,6 @@
       <Filter>UI</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Components\led.cpp">
-      <Filter>Components</Filter>
-    </ClCompile>
     <ClCompile Include="Components\NAND2.cpp">
       <Filter>Components</Filter>
     </ClCompile>
@@ -326,16 +329,7 @@
     <ClCompile Include="Components\XOR2.cpp">
       <Filter>Components</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\ADD_BUFF.cpp">
-      <Filter>Actions</Filter>
-    </ClCompile>
     <ClCompile Include="Actions\ADD_connection.cpp">
-      <Filter>Actions</Filter>
-    </ClCompile>
-    <ClCompile Include="Actions\ADD_INV.cpp">
-      <Filter>Actions</Filter>
-    </ClCompile>
-    <ClCompile Include="Actions\ADD_LED.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
     <ClCompile Include="Actions\ADD_switch.cpp">
@@ -356,7 +350,21 @@
     <ClCompile Include="Actions\AddXORgate.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\select1.cpp">
+    <ClCompile Include="Actions\ADD_Label.cpp" />
+    <ClCompile Include="Actions\Select.cpp" />
+    <ClCompile Include="Components\BUFF.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\led.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\INV2.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_BUFF.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\ADD_INV2.cpp">
       <Filter>Actions</Filter>
     </ClCompile>
   </ItemGroup>

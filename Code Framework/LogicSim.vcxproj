@@ -71,12 +71,10 @@
     <ClInclude Include="Actions\AddXORgate.h" />
     <ClInclude Include="Actions\ADD_BUFF.h" />
     <ClInclude Include="Actions\ADD_connection.h" />
-    <ClInclude Include="Actions\ADD_INV.h" />
+    <ClInclude Include="Actions\ADD_INV2.h" />
     <ClInclude Include="Actions\ADD_Label.h" />
-    <ClInclude Include="Actions\ADD_LED.h" />
     <ClInclude Include="Actions\ADD_switch.h" />
     <ClInclude Include="Actions\Select.h" />
-    <ClInclude Include="Actions\select1.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -128,12 +126,10 @@
     <ClCompile Include="Actions\AddXORgate.cpp" />
     <ClCompile Include="Actions\ADD_BUFF.cpp" />
     <ClCompile Include="Actions\ADD_connection.cpp" />
-    <ClCompile Include="Actions\ADD_INV.cpp" />
+    <ClCompile Include="Actions\ADD_INV2.cpp" />
     <ClCompile Include="Actions\ADD_Label.cpp" />
-    <ClCompile Include="Actions\ADD_LED.cpp" />
     <ClCompile Include="Actions\ADD_switch.cpp" />
     <ClCompile Include="Actions\Select.cpp" />
-    <ClCompile Include="Actions\select1.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
     <ClCompile Include="CMUgraphicsLib\auxil.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>

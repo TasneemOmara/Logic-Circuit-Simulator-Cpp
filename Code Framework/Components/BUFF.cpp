@@ -1,18 +1,9 @@
 #include "BUFF.h"
 
-
-
-BUFF::BUFF(GraphicsInfo* pGfxInfo):Component(pGfxInfo)
-{
-	InputPin* m_InputputPin = new InputPin;
-    m_InputputPin->setComponent(this);
+BUFF::BUFF(GraphicsInfo* r_pGfxInfo, int r_FanOut) : Gate(r_pGfxInfo, 2, r_FanOut){
+	//InputPin* m_InputputPin = new InputPin;
+   // m_InputputPin->setComponent(this);
 }
-
-BUFF::BUFF(GraphicsInfo* pGfxInfo,int r_FanOut):Component(pGfxInfo), m_OutputPin(r_FanOut)
-{
-
-}
-
 
 void BUFF::SaveComponent(int ID, fstream &fileToSave)
 {
@@ -24,4 +15,13 @@ void BUFF::SaveComponent(int ID, fstream &fileToSave)
 GraphicsInfo* BUFF::getGraphics()
 {
 	return m_pGfxInfo;
+}
+void BUFF::Operate() {
+
+
+
+}	//Calculates the output of the AND gate
+
+void BUFF::Draw(UI* pUI, bool selected) {
+	pUI->(*m_pGfxInfo, selected);
 }
