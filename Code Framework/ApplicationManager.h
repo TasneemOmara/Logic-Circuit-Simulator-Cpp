@@ -16,9 +16,12 @@ class ApplicationManager
 
 private:
 	int CompCount;		//Actual number of Components
+	enum { MaxCompCount = 200 };
+
 	Component* CompList[MaxCompCount];	//List of all Components (Array of pointers)
 
 	UI* pUI; //pointer to the UI
+	
 
 
 public:	

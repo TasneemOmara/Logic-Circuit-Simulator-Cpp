@@ -10,6 +10,8 @@ AddXORgate::AddXORgate (ApplicationManager* pApp) :Action(pApp)
 AddXORgate::~AddXORgate(void)
 {
 }
+
+void AddXORgate::Execute() {
 //Get a Pointer to the user Interfaces
 UI* pUI = pManager->GetUI();
 
@@ -31,7 +33,7 @@ pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 pGInfo->PointsList[0].y = Cy - gateHeight / 2;
 pGInfo->PointsList[1].x = Cx + gateWidth / 2;
 pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-XNOR2* pA = new XNOR2(pGInfo, XNOR_FANOUT);//***how XNOR is wriiten depends on how u made it guys
+XOR2* pA = new XOR2(pGInfo, XOR2_FANOUT);//
 pManager->AddComponent(pA);
 }
 

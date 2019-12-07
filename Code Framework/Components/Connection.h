@@ -17,6 +17,13 @@ public:
 	virtual void Operate() ;	//Calculates the output according to the inputs
 	virtual void Draw(UI*, bool selected);	//for each component to Draw itself
 
+
+	virtual string getLabel();
+	
+
+	virtual void setLabel(string L);
+	
+
 	
 	void setSourcePin(OutputPin *pSrcPin);
 	void setDestPin(InputPin *pDstPin);

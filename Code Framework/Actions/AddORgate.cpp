@@ -13,6 +13,7 @@ AddORgate::~AddORgate(void)
 void AddORgate::Execute()
 {                             
 }
+void AddORgate::Execute() {
 //Get a Pointer to the user Interfaces
 UI* pUI = pManager->GetUI();
 
@@ -34,7 +35,7 @@ pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 pGInfo->PointsList[0].y = Cy - gateHeight / 2;
 pGInfo->PointsList[1].x = Cx + gateWidth / 2;
 pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-OR2* pA = new OR2(pGInfo, OR_FANOUT);//***how OR is wriiten depends on how u made it guys
+OR2* pA = new OR2(pGInfo, OR2_FANOUT);//***how OR is wriiten depends on how u made it guys
 pManager->AddComponent(pA);
 }
 
