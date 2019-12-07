@@ -26,11 +26,11 @@ void Switch::Draw(UI* pUI, bool selected)
 	pUI->DrawSwitch(*m_pGfxInfo, selected);
 };
 
- InputPin* Switch::getInput() {
+ //InputPin* Switch::getInput() {
 	//return nullptr;
-}
+//}
 
- OutputPin* Switch::getOutput() {
+ //OutputPin* Switch::getOutput() {
 
-}
+//}
 

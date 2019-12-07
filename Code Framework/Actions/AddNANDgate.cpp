@@ -34,7 +34,7 @@ pGInfo->PointsList[0].x = Cx - gateWidth / 2;
 pGInfo->PointsList[0].y = Cy - gateHeight / 2;
 pGInfo->PointsList[1].x = Cx + gateWidth / 2;
 pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-NAND2* pA = new NAND2(pGInfo, NAND2_FANOUT);//***how NAND is wriiten depends on how u made it guys
+NAND2* pA = new NAND2(pGInfo, NAND2_FANOUT);
 pManager->AddComponent(pA);
 }
 

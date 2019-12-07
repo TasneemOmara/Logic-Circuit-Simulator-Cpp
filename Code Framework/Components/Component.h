@@ -15,7 +15,7 @@ class Component
 protected:
 
 	string m_Label;    
-	bool is_selected;
+	
 	bool is_selected=false;
 
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
