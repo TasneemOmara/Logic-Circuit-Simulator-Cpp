@@ -10,7 +10,7 @@ class Component
 private:
 	string m_Label; //label
 protected:
-	bool is_selected;
+	bool is_selected=false;
 	GraphicsInfo *m_pGfxInfo;	//The parameters required to draw a component
 public:
 	virtual bool selected(Point k) = 0;

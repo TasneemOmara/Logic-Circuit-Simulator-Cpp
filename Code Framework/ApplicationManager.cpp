@@ -1,6 +1,17 @@
 #include "ApplicationManager.h"
 #include "Actions\AddANDgate2.h"
-
+#include "Actions\ADD_connection.h"
+#include "Actions\ADD_BUFF.h"
+#include "Actions\ADD_INV2.h"
+#include "Actions\ADD_Label.h"
+#include "Actions\ADD_LED2.h"
+#include "Actions\ADD_switch.h"
+#include "Actions\AddNANDgate.h"
+#include "Actions\AddNORgate.h"
+#include "Actions\AddORgate.h"
+#include "Actions\AddXNORgate.h"
+#include "Actions\AddXORgate.h"
+#include "Actions\Select.h"
 
 ApplicationManager::ApplicationManager()
 {
@@ -39,14 +50,47 @@ void ApplicationManager::ExecuteAction(ActionType ActType)
 			pAct = new ADD_connection(this);
 			break;
 
-		case Select:
-			pAct= new Select(this);
+		case SELECT:
+			pAct = new Select(this);
+			break;
+		case ADD_Buff:
+			pAct = new ADD_BUFF(this);
+			break;
+		case ADD_INV:
+			pAct = new ADD_INV2(this);
+			break;
+		case ADD_OR_GATE_2:
+			pAct = new AddORgate(this);
+			break;
+		case ADD_NAND_GATE_2:
+			pAct = new AddNANDgate(this);
+			break;
+		case ADD_NOR_GATE_2:
+			pAct = new AddNORgate(this);
+			break;
+		case ADD_XOR_GATE_2:
+			pAct = new AddXORgate(this);
+			break;
+		case ADD_XNOR_GATE_2:
+			pAct = new AddXNORgate(this);
+			break;
+		case ADD_Switch:
+			pAct = new ADD_switch(this);
+			break;
+		case ADD_LED:
+			pAct = new ADD_LED2(this);
 			break;
 
+		case SAVE:
+			///
+			break;
+		case LOAD:
+			//
+			break;
 		case EXIT:
 			///TODO: create ExitAction here
 			break;
-	}
+		
 	
 	if(pAct)
 	{
@@ -71,7 +115,7 @@ UI* ApplicationManager::GetUI()
 }
 
 ////////////////////////////////////////////////////////////////////
-void ApplicationManager::GetCompList(int &Count, *Component Complist ) {
+void ApplicationManager::GetCompList(int &Count, Component* Complist ) {
 	Complist = CompList[0];
 	Count = CompCount; 
 }

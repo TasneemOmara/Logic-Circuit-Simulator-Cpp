@@ -10,6 +10,9 @@ public:
 	Select(ApplicationManager *App);
 	void Execute();
 	int getIndex();
+	virtual void Undo();
+	virtual void Redo();
+
 	
 };
 

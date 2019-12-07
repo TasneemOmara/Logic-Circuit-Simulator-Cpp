@@ -1,18 +1,18 @@
-#include "ADD_INV.h"
+#include "ADD_INV2.h"
 #include "..\ApplicationManager.h"
 
 
 
-ADD_INV::ADD_INV(ApplicationManager* pApp) :Action(pApp)
+ADD_INV2::ADD_INV2(ApplicationManager* pApp) :Action(pApp)
 {
 }
 
 
-ADD_INV::~ADD_INV (void)
+ADD_INV2::~ADD_INV2 (void)
 {
 }
 
-void ADD_INV::Execute(){
+void ADD_INV2::Execute(){
     //Get a Pointer to the user Interfaces
     UI* pUI = pManager->GetUI();
 
@@ -34,13 +34,13 @@ void ADD_INV::Execute(){
     pGInfo->PointsList[0].y = Cy - gateHeight / 2;
     pGInfo->PointsList[1].x = Cx + gateWidth / 2;
     pGInfo->PointsList[1].y = Cy + gateHeight / 2;
-    INV* pA = new INV(pGInfo, INV_FANOUT);//***INV is wriiten depends on how u made it guys
+    INV2* pA = new INV2(pGInfo, INV2_FANOUT);//***INV is wriiten depends on how u made it guys
     pManager->AddComponent(pA);
 }
 
-void ADD_INV::Undo()
+void ADD_INV2::Undo()
 {}
 
-void ADD_INV::Redo()
+void ADD_INV2::Redo()
 {}
 
